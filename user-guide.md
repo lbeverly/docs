@@ -8,7 +8,7 @@ To use ScaleFT, you must belong to a team. Once your organization has created a 
 
 ## Installing the client app
 
-Download the OS X app [here](https://dist.scaleft.com/client-tools/mac/v0.6.1/ScaleFT-0.6.1.pkg).
+Download the OS X app [here](https://dist.scaleft.com/client-tools/mac/latest/ScaleFT.pkg).
 
 This will install the `sft` binary to `/Applications/ScaleFT.app/Contents/MacOS/sft` -- you may wish to symlink this into your $PATH:
 
