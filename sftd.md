@@ -36,8 +36,8 @@ For ScaleFT Access it rotates project-level CA Certificates and manages local us
 
 An example of enrolling a server with a custom ScaleFT instance:
 ```yaml
-AutoEnroll = true
-InitialURL = "https://scaleft.example.com"
+AutoEnroll: true
+InitialURL: https://scaleft.example.com
 ```
 
 ## Command Line Options
