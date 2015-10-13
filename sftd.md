@@ -26,7 +26,7 @@ sftd -- ScaleFT Daemon
  
 ## Configuration File
 
-`sftd` reads `/etc/sft/sftd.yaml` in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.
+`sftd` reads `/etc/sft/sftd.yaml` in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.  If this file is not available, `sftd` proceeds with the default values.
 
 ### Configuration Options
 
