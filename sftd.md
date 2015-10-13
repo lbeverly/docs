@@ -23,14 +23,16 @@ For ScaleFT Access it rotates project-level CA Certificates and manages local us
 
 ### Configuration Options
 
-* `AutoEnroll`: `sftd` will attempt to automatically enroll on initial startup to ScaleFT. (default: `true`): 
-* `BufferFile`: Base path for `sftd` to write a local buffer for later synchronization to the ScaleFT Platform.  Path is appended to with `.XXXXX` where `XXXXX` is replaced with an incrementing number.  (default: `/var/lib/sftd/buffer.db`)
-* `EnrollmentTokenFile`: Path to the file containing a secret token for token based enrollment.  This file is deleted after a successful enrollment to the platform. (default: `/var/lib/sftd/enrollment.token`)
-* `InitialURL`: URL to ScaleFT instance to use for initial enrollment.
-* `ServerFile`: Path to file containing the ScaleFT server URL. (default: `/var/lib/sftd/device.server`)
-* `SSHDConfigFile`: Path to `sshd` configuration file (default: `/etc/ssh/sshd_config`)
-* `TokenFile`: Path to file containing the secret token for authentication to ScaleFT. (default: `/var/lib/sftd/device.toke`)
-* `TrustedUserCAKeysFile`: Path for `sftd` to write the list of trusted SSH Certificate authorities to. (default: `/var/lib/sftd/ssh_ca.pub`)
+| Option        | Default Value | Description  |
+|:------------- | ------------- |:-------------|
+| `AutoEnroll` | `true` | `sftd` will attempt to automatically enroll on initial startup to ScaleFT. |
+| `BufferFile` | `/var/lib/sftd/buffer.db` | Base path for `sftd` to write a local buffer for later synchronization to the ScaleFT platform.  Path is appended to with `.` and an incrementing number as the program synchronizes to the ScaleFT platform. |
+| `EnrollmentTokenFile` | `/var/lib/sftd/enrollment.token` | Path to the file containing a secret token for token based enrollment.  This file is deleted after a successful enrollment to the platform.
+| `InitialURL` | | URL to ScaleFT instance to use for initial enrollment. |
+| `ServerFile` | `/var/lib/sftd/device.server` | Path to file containing the ScaleFT server URL. |
+| `SSHDConfigFile` | `/etc/ssh/sshd_config` | Path to `sshd` configuration file |
+| `TokenFile` | `/var/lib/sftd/device.token` | Path to file containing the secret token for authentication to ScaleFT. |
+| `TrustedUserCAKeysFile` | `/var/lib/sftd/ssh_ca.pub` | Path for `sftd` to write the list of trusted SSH Certificate authorities to. |
 
 ### Configuration Example
 
