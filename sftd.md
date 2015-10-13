@@ -13,10 +13,17 @@ sftd -- ScaleFT Daemon
 
 ## Description
 
-**sftd** run on you servers and provides integration with the ScaleFT platform.
+**sftd** runs on you servers and provides integration with ScaleFT. For ScaleFT Access it installs trusted CA certificates, tracks logins to the server, and manages local user accounts.
 
-For ScaleFT Access it rotates project-level CA Certificates and manages local user accounts.
+## Installation
 
+`sftd` can be installed from either an `rpm` or `deb` package.
+
+| Format | Architecture | URL |
+|----    | --------     |----|
+| deb | amd64 | https://dist.scaleft.com/server-tools/linux/latest/scaleft-server-tools_latest_amd64.deb |
+| rpm | x86_64 | https://dist.scaleft.com/server-tools/linux/latest/scaleft-server-tools-latest.x86_64.rpm |
+ 
 ## Configuration File
 
 `sftd` reads `/etc/sft/sftd.yaml` in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.
