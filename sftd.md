@@ -13,7 +13,7 @@ sftd -- ScaleFT Daemon
 
 ## Description
 
-**sftd** is a deamon that runs on you servers and provides integration with ScaleFT. For ScaleFT Access it installs trusted CA certificates, tracks logins to the server, and manages local user accounts.
+**sftd** is a deamon that runs on your servers and provides integration with ScaleFT. For ScaleFT Access it installs trusted CA certificates, tracks logins to the server, and manages local user accounts.
 
 ## Installation
 
