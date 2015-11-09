@@ -17,12 +17,13 @@ sftd -- ScaleFT Daemon
 
 ## Installation
 
-`sftd` can be installed from either an `rpm` or `deb` package.
+Add [ScaleFT to your package manager](linux-package-manager.html). Then run:
 
-| Format | Architecture | URL |
-|----    | --------     |----|
-| deb | amd64 | https://dist.scaleft.com/server-tools/linux/latest/scaleft-server-tools_latest_amd64.deb |
-| rpm | x86_64 | https://dist.scaleft.com/server-tools/linux/latest/scaleft-server-tools-latest.x86_64.rpm |
+```sudo apt-get install scaleft-server-tools```
+
+or
+
+```sudo yum install scaleft-server-tools```
 
 ## Configuration File
 

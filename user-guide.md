@@ -8,11 +8,30 @@ To use ScaleFT, you must belong to a team. Once your organization has created a 
 
 ## Installing the client app
 
-Download the OS X app [here](https://dist.scaleft.com/client-tools/mac/latest/ScaleFT.pkg).
+### OSX
+
+Download the app [here](https://dist.scaleft.com/client-tools/mac/latest/ScaleFT.pkg).
 
 This will install the `sft` binary to `/Applications/ScaleFT.app/Contents/MacOS/sft` -- you may wish to symlink this into your $PATH:
 
     sudo ln -s /Applications/ScaleFT.app/Contents/MacOS/sft /usr/local/bin/
+
+### Linux
+
+First, [add ScaleFT to your package manager](linux-package-manager.html).
+
+To install the sft binary, run:
+
+```sudo apt-get install scaleft-client-tools``` or
+
+```sudo yum install scaleft-client-tools```
+
+To use scaleft URLs with ScaleFT Access, install the handler with:
+
+```sudo apt-get install scaleft-url-handler``` or
+
+```sudo yum install scaleft-url-handler```
+
 
 ## Enrolling your workstation into your team
 
