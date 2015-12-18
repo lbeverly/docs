@@ -16,13 +16,9 @@ To use ScaleFT, you must belong to a team. Once your organization has created a 
 
 Download the app [here](https://dist.scaleft.com/client-tools/mac/latest/ScaleFT.pkg).
 
-This will install the `sft` binary to `/Applications/ScaleFT.app/Contents/MacOS/sft` -- you may wish to symlink this into your $PATH:
-
-    sudo ln -s /Applications/ScaleFT.app/Contents/MacOS/sft /usr/local/bin/
-
 ### Linux
 
-First, [add ScaleFT to your package manager](linux-package-manager.html).
+First, [add ScaleFT to your package manager](/docs/linux-package-manager/).
 
 To install the sft binary, run:
 
