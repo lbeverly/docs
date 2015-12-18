@@ -1,5 +1,9 @@
 ---
-title: ScaleFT User Guide
+title: "Getting Started"
+menu:
+  main:
+    parent: 'user-guide'
+    weight: 0
 ---
 
 ## Getting Started
@@ -65,5 +69,3 @@ When you run `sft ssh`, the client:
 
 If you run `sft ssh` a second time within a 10 hour period you won't need to
 log in again.
-
-

@@ -1,7 +1,9 @@
 ---
-title: Linux Package Repos
-category: Reference
-weight: 5
+title: Server Configuration
+menu:
+  main:
+    parent: 'user-guide'
+    weight: 50
 ---
 
 ## Add ScaleFT to Your Package Manager
@@ -14,7 +16,7 @@ weight: 5
 
 2. Trust Bintray:
 
-  ```sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61``` 
+  ```sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61```
 
 3. `sudo apt-get update`
 
@@ -33,7 +35,7 @@ weight: 5
    name=bintray-scaleft-scaleft-rpm
    baseurl=https://scaleft.bintray.com/scaleft-rpm
    gpgcheck=0
-   enabled=1 
+   enabled=1
    ```
 
 2. `sudo mv  bintray-scaleft-scaleft-rpm.repo /etc/yum.repos.d/`

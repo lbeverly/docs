@@ -1,11 +1,10 @@
 ---
 title: sftd Reference
-category: Reference
-weight: 5
+menu:
+  main:
+    parent: 'reference'
+    weight: 50
 ---
-
-sftd -- ScaleFT Daemon
-=============================================
 
 ## Synopsis
 
