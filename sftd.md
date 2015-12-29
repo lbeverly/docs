@@ -1,9 +1,8 @@
 ---
-title: sftd Reference
+title: Server Daemon - sftd
 menu:
   main:
     parent: 'reference'
-    weight: 50
 ---
 
 ## Synopsis
