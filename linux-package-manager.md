@@ -23,5 +23,5 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
 ```
 # Add the ScaleFT yum repository
 curl https://bintray.com/scaleft/scaleft-rpm/rpm > scaleft.repo
-sudo mv  bintray-scaleft-scaleft-rpm.repo /etc/yum.repos.d/
+sudo mv scaleft.repo /etc/yum.repos.d/
 ```
