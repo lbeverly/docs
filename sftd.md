@@ -15,7 +15,7 @@ menu:
 
 ## Installation
 
-Add [ScaleFT to your package manager](linux-package-manager.html). Then run:
+Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run:
 
 ```sudo apt-get install scaleft-server-tools```
 
