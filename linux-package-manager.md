@@ -17,7 +17,7 @@ echo "deb http://scaleft.bintray.com/scaleft-apt ubuntu main" | sudo tee -a /etc
 # Trust the repository signing key:
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
 
-# Make the changes take effect
+# Retrieve information about new packages
 sudo apt-get update
 ```
 
