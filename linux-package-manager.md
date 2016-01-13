@@ -12,10 +12,13 @@ repositories.
 
 ```
 # Add the ScaleFT apt repo to your /etc/apt/sources.list system config file:
-echo "deb https://scaleft.bintray.com/scaleft-apt ubuntu main" | sudo tee -a /etc/apt/sources.list
+echo "deb http://scaleft.bintray.com/scaleft-apt ubuntu main" | sudo tee -a /etc/apt/sources.list
 
 # Trust the repository signing key:
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
+
+# Make the changes take effect
+sudo apt-get update
 ```
 
 ## Red Hat, CentOS and Fedora
