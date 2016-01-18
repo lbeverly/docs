@@ -56,7 +56,7 @@ Then, install the `scaleft-server-tools` package:
 sudo apt-get install scaleft-server-tools
 ```
 
-The `sftd` daemon should start automatically. Check `/var/log/sftd` to verify
+The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify
 that the daemon is running.
 
 ### Red Hat, CentOS and Fedora
