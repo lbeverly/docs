@@ -10,14 +10,6 @@ menu:
 
 ScaleFT is a cloud-native security platform that brings risk-based, dynamic authentication to cloud infrastructure using short-lived certificates.
 
-## Components
-
-ScaleFT is composed of three components:
-
-1. ScaleFT Platform
-2. ScaleFT server daemon
-3. ScaleFT client application
-
 ## Concepts
 
 ### Team
@@ -39,6 +31,14 @@ A User is a member of a Team. Users can belong to multiple Groups and have multi
 ### Client
 
 The ScaleFT Client is installed on a device (such as a laptop or workstation) which a User uses to access infrastructure. The ScaleFT Client manages the dynamic credentials on the device so the User can transparently access ScaleFT-managed infrastructure.
+
+## Components
+
+ScaleFT is composed of three components:
+
+1. ScaleFT Platform
+2. ScaleFT server daemon
+3. ScaleFT client application
 
 ## Initial Configuration
 
