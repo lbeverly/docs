@@ -11,7 +11,12 @@ menu:
 
 ## Description
 
-**sftd** is a deamon that runs on your servers and provides integration with ScaleFT. For ScaleFT Access it installs trusted CA certificates, tracks logins to the server, and manages local user accounts.
+**sftd** is a daemon that runs on your servers and integrates with the ScaleFT Platform.
+
+For ScaleFT Access it installs trusted CA certificates to `sshd`, tracks logins to the server,
+and manages local user accounts. If a User Group that has the `server_admin` flag enabled is
+added to the Project for an `sftd`-managed server, `sftd` will modify the sudoers file to
+include those Users.
 
 ## Installation
 
@@ -25,7 +30,9 @@ or
 
 ## Configuration File
 
-`sftd` reads `/etc/sft/sftd.yaml` in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.  If this file is not available, `sftd` proceeds with the default values.
+`sftd` reads `/etc/sft/sftd.yaml` in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.
+
+If this file is not available, `sftd` proceeds with the default values.
 
 ### Configuration Options
 
