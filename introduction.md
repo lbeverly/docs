@@ -70,8 +70,6 @@ Each of these certificates contains the following information:
 2. The username to be used on the server of the Scaleft User to whom the certificate was issued
 3. The time at which the certificate expires
 
-Before a certificate expires, the ScaleFT Client will re-verify that the User should continue to have access, and as long as the user remains authenticated and authorized, the Client will automatically install a renewed certificate valid for another brief interval.
-
 Since ScaleFT credentials are short-lived, and scoped to a Project, even if a credential is compromised by an attacker, the attacker has a very limited window of time to use the certificate before it expires, and it is only of use against resources in that Project.
 
 
