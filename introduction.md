@@ -44,7 +44,7 @@ ScaleFT is composed of three components:
 * ScaleFT Daemon
 * ScaleFT Client
 
-Deploying ScaleFT in your infrastructure is as simple as deploying the ScaleFT Daemon on your servers, and installing the ScaleFT Client on any workstation which is permittted to access your infrastructure.
+Using ScaleFT in your infrastructure is as simple as deploying the ScaleFT Daemon on your servers, and installing the ScaleFT Client on any workstation which is permittted to access your infrastructure.
 
 ### ScaleFT Platform
 
