@@ -3,7 +3,7 @@ title: Enrolling a Server
 menu:
   main:
     parent: 'user-guide'
-    weight: 4
+    weight: 5
 ---
 
 Before you can access a Server via ScaleFT you'll need to associate your Server
@@ -53,8 +53,7 @@ in your ScaleFT Project.
 
 ## Installing ScaleFT Server Daemon (sftd)
 
-First, [add the ScaleFT package repository for your Linux
-distribution](/docs/linux-package-manager).
+First, [add the ScaleFT package repository for your Linux distribution](/docs/linux-package-manager).
 
 Then, install the `scaleft-server-tools` package:
 
@@ -64,8 +63,7 @@ Then, install the `scaleft-server-tools` package:
 sudo apt-get install scaleft-server-tools
 ```
 
-The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify
-that the daemon is running.
+The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify that the daemon is running.
 
 ### Red Hat, CentOS and Fedora
 
@@ -73,9 +71,7 @@ that the daemon is running.
 sudo yum install scaleft-server-tools
 ```
 
-The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify
-that the daemon is running.
-
+The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify that the daemon is running.
 
 
 For more information and advanced options, see the section on [sftd](/docs/sftd).
