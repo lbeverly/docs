@@ -1,5 +1,5 @@
 ---
-title: "Introduction to ScaleFT"
+title: "Introduction"
 menu:
   main:
     parent: 'user-guide'
