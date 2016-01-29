@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Introduction to ScaleFT"
 menu:
   main:
     parent: 'user-guide'
@@ -32,38 +32,43 @@ A User is a member of a Team. Users can belong to multiple Groups and have multi
 
 The ScaleFT Client is installed on a device (such as a laptop or workstation) which a User uses to access infrastructure. The ScaleFT Client manages the dynamic credentials on the device so the User can transparently access ScaleFT-managed infrastructure.
 
-## Components
+### Identity Provider (IdP)
+
+Every Team has an Identity Provider which Users authenticate to using the Team's authentication method. The IdP is the source of truth for User's identity and current access.
+
+## Architecture
 
 ScaleFT is composed of three components:
 
-1. ScaleFT Platform
-2. ScaleFT server daemon
-3. ScaleFT client application
+* ScaleFT Platform
+* ScaleFT Daemon
+* ScaleFT Client
 
-## Initial Configuration
+Using ScaleFT in your infrastructure is as simple as deploying the ScaleFT Daemon on your servers, and installing the ScaleFT Client on any workstation which is permittted to access your infrastructure.
 
-To get started with ScaleFT, once you have an invite code:
+### ScaleFT Platform
 
-1. Create a Team in the ScaleFT platform, and configure it to work with your identity provider to authenticate members of your team.
-2. Create a Project in ScaleFT link it to a User Group (you can also use the universal groups `everyone` and `owners`).
-3. Install the ScaleFT server daemon (`sftd`) on one or more servers, and enroll those servers in a Project.
-4. Have team members install the ScaleFT client application and enroll their Clients in your Team.
+The API and web dashboard that enable configuration, communication, and coordination across all ScaleFT components.
 
-Once you have performed these steps, your servers will be automatically configured to trust certificates issued by the ScaleFT platform as a way of authenticating SSH users. You can also configure `sftd` to create user accounts for the members of your Team, and even manage `sudo` access with ScaleFT roles and permissions.
+### ScaleFT Daemon
 
-The client application installed by each of your team members will connect to the ScaleFT platform to verify users against your identity provider. While a team member remains authenticated, the client manages the dynamic credentials that enable that User to authenticate to any resources they may access.
+The multi-OS, host-local agent that interfaces with the server's local services and user accounts to enable ScaleFT features like certificate-based authentication, user account auto-creation, and superuser privileges.
+
+Unlike older approaches to authentication, this agent is not involved in the active authentication processes of services on the server. ScaleFT certificates can already be cryptographically verified by SSH and services which use X.509 independently of `stfd`.
+
+### ScaleFT Client
+
+The application that users install to interface with their workstation's local cryptographic stores and enable dynamic authentication workflows.
 
 ## Short Lived Certificates
 
-ScaleFT Projects manage Certificate Authorities to issue short-lived certificates, which are managed transparently on the User's device by the ScaleFT Client.
+ScaleFT Projects operate Certificate Authorities to issue short-lived certificates, which are managed transparently on the User's device by the ScaleFT Client.
 
 Each of these certificates contains the following information:
 
 1. The ScaleFT Project for which the certificate was issued
 2. The username to be used on the server of the Scaleft User to whom the certificate was issued
 3. The time at which the certificate expires
-
-Before a certificate expires, the ScaleFT Client will re-verify that the User should continue to have access, and as long as the user remains authenticated and authorized, the Client will automatically install a renewed certificate valid for a brief period of time.
 
 Since ScaleFT credentials are short-lived, and scoped to a Project, even if a credential is compromised by an attacker, the attacker has a very limited window of time to use the certificate before it expires, and it is only of use against resources in that Project.
 

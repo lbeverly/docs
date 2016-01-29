@@ -3,7 +3,7 @@ title: "Creating a Project"
 menu:
   main:
     parent: 'user-guide'
-    weight: 1
+    weight: 3
 ---
 
 A Project is a collection of resources (such as servers, load-balancers, web services, or VPNs) that share configurations and associated User Group permissions.

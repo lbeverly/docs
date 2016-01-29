@@ -3,7 +3,7 @@ title: Enrolling a Client
 menu:
   main:
     parent: 'user-guide'
-    weight: 5
+    weight: 6
 ---
 
 ScaleFT credentials are granular to the combination of a User and the User's device.

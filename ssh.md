@@ -3,7 +3,7 @@ title: SSHing to a Server
 menu:
   main:
     parent: 'user-guide'
-    weight: 5
+    weight: 7
 ---
 
 Once the initial configuration is complete, ScaleFT Users can SSH to all

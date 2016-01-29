@@ -3,7 +3,7 @@ title: "Granting Access"
 menu:
   main:
     parent: 'user-guide'
-    weight: 2
+    weight: 4
 ---
 
 ## Groups
