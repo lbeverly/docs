@@ -12,10 +12,10 @@ repositories.
 
 ```
 # Add the ScaleFT apt repo to your /etc/apt/sources.list system config file:
-echo "deb http://scaleft.bintray.com/scaleft-apt ubuntu main" | sudo tee -a /etc/apt/sources.list
+echo "deb http://pkg.scaleft.com/deb linux main" | sudo tee -a /etc/apt/sources.list
 
 # Trust the repository signing key:
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
+curl -C - https://www.scaleft.com/dl/scaleft_deb_key.asc | sudo apt-key add -
 
 # Retrieve information about new packages
 sudo apt-get update
@@ -25,6 +25,8 @@ sudo apt-get update
 
 ```
 # Add the ScaleFT yum repository
-curl https://bintray.com/scaleft/scaleft-rpm/rpm > scaleft.repo
-sudo mv scaleft.repo /etc/yum.repos.d/
+curl -C - https://www.scaleft.com/dl/scaleft_yum.repo | sudo tee /etc/yum.repos.d/scaleft.repo
+
+# Trust the repository signing key
+sudo rpm --import https://www.scaleft.com/dl/scaleft_rpm_key.asc
 ```
