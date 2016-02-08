@@ -6,8 +6,6 @@ menu:
     weight: 1
 ---
 
-## Initial Configuration
-
 To get started with ScaleFT, once you have an invite code:
 
 1. Create a Team in the ScaleFT platform, configuring an authentication method for all Team members.
