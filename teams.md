@@ -6,8 +6,6 @@ menu:
     weight: 2
 ---
 
-## Creating a Team
-
 A Team is a group of people who work together on infrastructure and share an authentication method (such as OAuth). Currently, creating a Team requires a ScaleFT Beta Invitation.
 
 When you create a Team, by default you are given Team Administrator permissions. By default, any additional Team members will belong only to the `everyone` Group, which grants certain view-only permissions. Additional permissions, such as SSH access, must be granted by you or another Team Administrator.
