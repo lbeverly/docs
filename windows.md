@@ -1,5 +1,9 @@
 ---
 title: Windows (Beta)
+menu:
+  main:
+    parent: 'none'
+    weight: -50
 ---
 
 ## Overview
