@@ -14,7 +14,8 @@ See below for directions.
 Once the ScaleFT Server Tools are installed on the server and the server enrolled, the ScaleFT Agent (`sftd`) does two
 things:
 
-1. Creates local accounts for all ScaleFT users who should have access to the server, very similar to on Linux.
+1. Creates local accounts for all ScaleFT users who should have access to the server, very similar to on Linux. On
+   Windows, these accounts are initially disabled.
 2. Runs an additional Access Broker which listens on port 4421.
 
 The Access Broker uses TLS 1.2 to authenticate all clients using client certificates that can only be issued by the
@@ -30,13 +31,17 @@ In order to establish an RDP connection, the ScaleFT client:
 3. Connects to the ScaleFT broker (over the SSH tunnels, if applicable) and authenticates using the short-lived
    certificate provided by the platform. The client also authenticates the server's host certificate against one
    provided by the platform to defend against man-in-the-middle attacks.
-4. Negotiates a proxied RDP connection via the Broker. The client is then able to start a TCP server on a random port
+4. The Client requests access to the user account on the server. At this point the Broker requests that the Agent
+   activate the user account.
+5. Negotiates a proxied RDP connection via the Broker. The client is then able to start a TCP server on a random port
    on the client, which is proxied through the broker to the RDP service on the server.
-5. The client writes an RDP connection file containing the connection info, including the random local port on which
+6. The client writes an RDP connection file containing the connection info, including the random local port on which
    the client is now listening. It then opens the Windows Terminal Services client with this configuration.
 
 The RDP Client connects to the local TCP port and is forwarded to the RDP service on the server. The RDP server is able
 to automatically authenticate as the user without any further prompting.
+
+When the user logs out, `sftd` will automatically disable their account.
 
 ## Configuration
 
