@@ -32,7 +32,7 @@ In order to establish an RDP connection, the ScaleFT client:
    certificate provided by the platform. The client also authenticates the server's host certificate against one
    provided by the platform to defend against man-in-the-middle attacks.
 4. The Client requests access to the user account on the server. At this point the Broker requests that the Agent
-   activate the user account.
+   enable the user account.
 5. Negotiates a proxied RDP connection via the Broker. The client is then able to start a TCP server on a random port
    on the client, which is proxied through the broker to the RDP service on the server.
 6. The client writes an RDP connection file containing the connection info, including the random local port on which
