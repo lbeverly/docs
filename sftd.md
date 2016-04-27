@@ -67,5 +67,5 @@ InitialURL: https://scaleft.example.com
 
 `sftd` reads the following variables when starting:
 
-  * `SCALEFT_DEBUG`:
+  * `SFT_DEBUG`:
     Prints additional debugging to `stderr` when set.
