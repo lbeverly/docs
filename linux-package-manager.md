@@ -5,7 +5,7 @@ menu:
     parent: 'reference'
 ---
 
-ScaleFT distributes client and server packages for Linux via APT and RPM
+ScaleFT distributes client and server packages for Linux via APT, RPM and AppContainer
 repositories.
 
 ## Ubuntu and Debian
@@ -29,4 +29,14 @@ curl -C - https://www.scaleft.com/dl/scaleft_yum.repo | sudo tee /etc/yum.repos.
 
 # Trust the repository signing key
 sudo rpm --import https://www.scaleft.com/dl/scaleft_rpm_key.asc
+```
+
+## CoreOS
+
+```
+# Add ScaleFT signing key to rkt
+sudo rkt trust  --prefix=scaleft.com/sftd
+
+# Optionally, pre-fetch a specific version.
+rkt fetch scaleft.com/sftd:0.18.5
 ```
