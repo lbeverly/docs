@@ -73,5 +73,18 @@ sudo yum install scaleft-server-tools
 
 The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify that the daemon is running.
 
+### CoreOS
+
+On CoreOS `sftd` is distributed as an App Container image (`.aci`) file, that runs under the [rkt container engine](https://coreos.com/rkt/) and managed by a systemd service file.  An example of deploying the systemd service file is bellow:
+
+```
+# Download example unit file
+curl --location --output /etc/systemd/system/sftd.service https://dist.scaleft.com/server-tools/linux/latest/sftd.service
+
+# Load unit file into systemd
+systemctl daemon-reload
+systemctl enable sftd.service
+systemctl start sftd.service
+```
 
 For more information and advanced options, see the section on [sftd](/docs/sftd).
