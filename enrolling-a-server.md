@@ -53,7 +53,7 @@ in your ScaleFT Project.
 
 ## Installing ScaleFT Server Daemon (sftd)
 
-First, [add the ScaleFT package repository for your Linux distribution](/docs/linux-package-manager).
+First, [add the ScaleFT package repository for your Linux distribution]({{% relref "linux-package-manager.md" %}}).
 
 Then, install the `scaleft-server-tools` package:
 
@@ -75,7 +75,7 @@ The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verif
 
 ### CoreOS
 
-On CoreOS `sftd` is distributed as an App Container image (`.aci`) file, that runs under the [rkt container engine](https://coreos.com/rkt/) and managed by a systemd service file.  An example of deploying the systemd service file is bellow:
+On CoreOS, `sftd` is distributed as an App Container image (`.aci`) file. It runs under the [rkt container engine](https://coreos.com/rkt/) and is managed by a systemd service file.  An example of deploying the systemd service file is below:
 
 ```
 # Download example unit file
@@ -87,4 +87,4 @@ systemctl enable sftd.service
 systemctl start sftd.service
 ```
 
-For more information and advanced options, see the section on [sftd](/docs/sftd).
+For more information and advanced options, see the section on [sftd]({{% relref "sftd.md" %}}).
