@@ -43,7 +43,7 @@ There are currently two roles supported by ScaleFT:
 ### Project Membership
 
 In order to access a resource in a Project, a ScaleFT User must be a member of
-a Group that has been linked to Project.
+a Group that has been linked to that Project.
 
 A Group's relationship to a Project has two configurations:
 
@@ -77,9 +77,9 @@ In order for a User to SSH to a server using ScaleFT:
 The simplest way to get up and running with access to your server is to:
 
 1. Browse to your Project in the ScaleFT Dashboard.
-2. Click "Link Group".
+2. Click "Link Group" from the "Permissions" tab.
 3. Enter `everyone` as the name of the Group. This will grant access to every
-   user on your ScaleFT Yeam.
+   user on your ScaleFT Team.
 4. Check the `server_access` checkbox in order to grant the Users access to the
    servers in your Project.
 5. Optionally check the `server_admin` box in order to grant the Users
