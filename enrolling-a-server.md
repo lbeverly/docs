@@ -75,7 +75,7 @@ The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verif
 
 ### CoreOS
 
-On CoreOS `sftd` is distributed as an App Container image (`.aci`) file, that runs under the [rkt container engine](https://coreos.com/rkt/) and managed by a systemd service file.  An example of deploying the systemd service file is bellow:
+On CoreOS, `sftd` is distributed as an App Container image (`.aci`) file. It runs under the [rkt container engine](https://coreos.com/rkt/) and is managed by a systemd service file.  An example of deploying the systemd service file is below:
 
 ```
 # Download example unit file
