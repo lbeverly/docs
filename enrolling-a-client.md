@@ -20,7 +20,7 @@ Download the app [here](https://dist.scaleft.com/client-tools/mac/latest/ScaleFT
 
 ### Ubuntu and Debian
 
-First, [add the ScaleFT APT repository](/docs/linux-package-manager#ubuntu-and-debian). Then
+First, [add the ScaleFT APT repository]({{% relref "linux-package-manager.md#ubuntu-and-debian" %}}). Then
 install the `scaleft-client-tools` package:
 
 ```
@@ -29,7 +29,7 @@ sudo apt-get install scaleft-client-tools
 
 ### Red Hat, CentOS and Fedora
 
-First, [add the ScaleFT RPM repository](/docs/linux-package-manager#red-hat-centos-and-fedora). Then
+First, [add the ScaleFT RPM repository]({{% relref "linux-package-manager.md#red-hat-centos-and-fedora" %}}). Then
 install the `scaleft-client-tools` package:
 
 ```

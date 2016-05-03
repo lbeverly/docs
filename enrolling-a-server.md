@@ -53,7 +53,7 @@ in your ScaleFT Project.
 
 ## Installing ScaleFT Server Daemon (sftd)
 
-First, [add the ScaleFT package repository for your Linux distribution](/docs/linux-package-manager).
+First, [add the ScaleFT package repository for your Linux distribution]({{% relref "linux-package-manager.md" %}}).
 
 Then, install the `scaleft-server-tools` package:
 
@@ -87,4 +87,4 @@ systemctl enable sftd.service
 systemctl start sftd.service
 ```
 
-For more information and advanced options, see the section on [sftd](/docs/sftd).
+For more information and advanced options, see the section on [sftd]({{% relref "sftd.md" %}}).
