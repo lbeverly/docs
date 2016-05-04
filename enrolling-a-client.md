@@ -12,29 +12,7 @@ enroll in Projects. Verifying the details of the devices that Users use to acces
 your infrastructure allows ScaleFT to make better-informed decisions about the risk
 of issuing credentials.
 
-## Installing ScaleFT Client Tools
 
-### OSX
-
-Download the app [here](https://dist.scaleft.com/client-tools/mac/latest/ScaleFT.pkg).
-
-### Ubuntu and Debian
-
-First, [add the ScaleFT APT repository]({{% relref "linux-package-manager.md#ubuntu-and-debian" %}}). Then
-install the `scaleft-client-tools` package:
-
-```
-sudo apt-get install scaleft-client-tools
-```
-
-### Red Hat, CentOS and Fedora
-
-First, [add the ScaleFT RPM repository]({{% relref "linux-package-manager.md#red-hat-centos-and-fedora" %}}). Then
-install the `scaleft-client-tools` package:
-
-```
-sudo yum install scaleft-client-tools
-```
 
 ## Enrolling Your Device
 

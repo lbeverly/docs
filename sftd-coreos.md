@@ -1,5 +1,5 @@
 ---
-title: "Installing sftd"
+title: "CoreOS sftd"
 menu:
   main:
     parent: 'server'
@@ -12,24 +12,6 @@ First, [add the ScaleFT package repository for your Linux distribution]({{% relr
 
 Then, install the `scaleft-server-tools` package:
 
-### Ubuntu and Debian
-
-```
-sudo apt-get install scaleft-server-tools
-```
-
-The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify that the daemon is running.
-
-### Red Hat, CentOS and Fedora
-
-```
-sudo yum install scaleft-server-tools
-```
-
-The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify that the daemon is running.
-
-### CoreOS
-
 On CoreOS, `sftd` is distributed as an App Container image (`.aci`) file. It runs under the [rkt container engine](https://coreos.com/rkt/) and is managed by a systemd service file.  An example of deploying the systemd service file is below:
 
 ```
@@ -41,5 +23,11 @@ systemctl daemon-reload
 systemctl enable sftd.service
 systemctl start sftd.service
 ```
+
+{{% terminal %}}
+<div>
+</div>
+{{% /terminal %}}
+
 
 For more information and advanced options, see the section on [sftd]({{% relref "sftd.md" %}}).
