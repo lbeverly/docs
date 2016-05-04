@@ -2,7 +2,7 @@
 title: Enrolling a Server
 menu:
   main:
-    parent: 'user-guide'
+    parent: 'setup'
     weight: 5
 ---
 

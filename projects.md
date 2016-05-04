@@ -2,7 +2,7 @@
 title: "Creating a Project"
 menu:
   main:
-    parent: 'user-guide'
+    parent: 'setup'
     weight: 3
 ---
 

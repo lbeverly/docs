@@ -2,7 +2,7 @@
 title: Enrolling a Client
 menu:
   main:
-    parent: 'user-guide'
+    parent: 'setup'
     weight: 6
 ---
 

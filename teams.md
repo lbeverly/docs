@@ -2,7 +2,7 @@
 title: "Creating a Team"
 menu:
   main:
-    parent: 'user-guide'
+    parent: 'setup'
     weight: 2
 ---
 

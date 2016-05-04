@@ -2,7 +2,7 @@
 title: "Introduction"
 menu:
   main:
-    parent: 'user-guide'
+    parent: 'setup'
     weight: 0
 ---
 
