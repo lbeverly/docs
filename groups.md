@@ -4,8 +4,6 @@ menu:
   main:
     parent: 'none'
     weight: 3
-aliases:
-  - /docs/groups
 ---
 
 ## Groups
