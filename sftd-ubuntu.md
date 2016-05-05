@@ -23,8 +23,6 @@ sudo apt-get update
 
 Then, install the `scaleft-server-tools` package:
 
-### Ubuntu and Debian
-
 ```
 sudo apt-get install scaleft-server-tools
 ```
