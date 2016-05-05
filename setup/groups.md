@@ -32,5 +32,5 @@ role.
 
 ### Group Members
 
-Once you've created the group you can add any members you wish. You can always remove
-members from a group later.
+Once you've created the Group you can add any members you wish. You can always remove
+members from a Group later.
