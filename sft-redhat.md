@@ -3,6 +3,7 @@ title: "ScaleFT Client on Redhat, CentOS, & Fedora"
 menu:
   main:
     parent: 'client'
+    name: 'Redhat, CentOS, & Fedora Client'
     weight: 5
 ---
 
