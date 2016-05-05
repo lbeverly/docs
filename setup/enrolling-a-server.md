@@ -3,7 +3,7 @@ title: Enrolling a Server
 menu:
   main:
     parent: 'setup'
-    weight: 5
+    weight: 6
 aliases:
   - /docs/enrolling-a-server
 ---

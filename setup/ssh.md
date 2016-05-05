@@ -3,7 +3,7 @@ title: SSHing to a Server
 menu:
   main:
     parent: 'setup'
-    weight: 7
+    weight: 8
 aliases:
   - /docs/ssh
 ---
@@ -38,7 +38,7 @@ client's access to infrastructure credentials. This approval will last for up to
 
 
 
-### Using sft as a ProxyCommand for ssh 
+### Using sft as a ProxyCommand for ssh
 
 **Note:** With the auto-generated configuration, you will not be prompted to
 approve your client's access automatically when you run `ssh`. If your client
@@ -95,7 +95,7 @@ alice@web0$</div>{{% /terminal %}}
 This can be made even easier, if you have servers that you always traverse a
 bastion to reach, you can add that bastion to the [server's configuration]({{% relref "docs/sftd.md" %}})
 
-When a Bastion is specified in a server's configuration, e.g. 
+When a Bastion is specified in a server's configuration, e.g.
 
 ```Bastion: bastion.example.com```
 
@@ -126,5 +126,3 @@ Welcome to Ubuntu 15.04 (GNU/Linux 3.19.0-15-generic x86_64)
 ----------------------------------------------------------------
 Last login: Thu Jan 4 07:14:03 2016 from 198.51.100.23
 alice@web0$</div>{{% /terminal %}}
-
-

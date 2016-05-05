@@ -10,7 +10,7 @@ aliases:
 
 ## Overview
 
-ScaleFT is a cloud-native security platform that brings risk-based, dynamic authentication to cloud infrastructure using short-lived certificates.
+ScaleFT is a cloud-native security platform that brings risk-based, dynamic authentication to cloud infrastructure using short-lived client certificates.
 
 ## Architecture
 
@@ -47,5 +47,3 @@ Each of these certificates contains the following information:
 3. The time at which the certificate expires
 
 Since ScaleFT credentials are short-lived, and scoped to a Project, even if a credential is compromised by an attacker, the attacker has a very limited window of time to use the certificate before it expires, and it is only of use against resources in that Project.
-
-

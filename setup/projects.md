@@ -3,7 +3,7 @@ title: "Creating a Project"
 menu:
   main:
     parent: 'setup'
-    weight: 4
+    weight: 5
 aliases:
   - /docs/projects
 ---

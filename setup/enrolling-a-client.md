@@ -3,7 +3,7 @@ title: Setting up a Client
 menu:
   main:
     parent: 'setup'
-    weight: 6
+    weight: 7
 aliases:
   - /docs/enrolling-a-client
 ---
