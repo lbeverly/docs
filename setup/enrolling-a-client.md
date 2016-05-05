@@ -22,6 +22,29 @@ risk of issuing credentials.
 ## Enrolling Your Device
 
 Once the ScaleFT Client is installed, the User should enroll the device. To
-do so, run `sft enroll` in your terminal. Based on the team's authentication
-configurations, this should open a web browser, or open the ScaleFT Dashboard
-so the User can complete the client enrollment process.
+do so, run `sft enroll` in your terminal.
+
+{{% terminal %}}<div>ggreer@carbon:~% sft enroll
+Waiting on browser...
+
+
+
+
+</div>{{% /terminal %}}
+
+This should open a web browser, allowing you to choose your Team and complete the client enrollment process.
+
+<img src="/docs/static/client-enrollment-approval.png" style="max-height: 621px;" />
+
+After the client is approved, `sft` will report success:
+
+{{% terminal %}}<div>ggreer@carbon:~% sft enroll
+Waiting on browser...
+Browser enrollment completed successfully.
+Enrolled Device: user=ggreer team=example
+ggreer@carbon:~%
+
+
+</div>{{% /terminal %}}
+
+At this point, you can [ssh to your enrolled servers]({{% relref "ssh.md" %}}).
