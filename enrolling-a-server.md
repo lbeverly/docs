@@ -2,7 +2,7 @@
 title: Enrolling a Server
 menu:
   main:
-    parent: 'user-guide'
+    parent: 'setup'
     weight: 5
 ---
 
@@ -51,40 +51,18 @@ account, if that server has not been previously enrolled in ScaleFT, `sftd` will
 submit the server's signed AWS metadata as proof of its identity, and enroll it
 in your ScaleFT Project.
 
-## Installing ScaleFT Server Daemon (sftd)
+<!-- todo: link to server install docs -->
 
-First, [add the ScaleFT package repository for your Linux distribution]({{% relref "linux-package-manager.md" %}}).
+### Installing the ScaleFT Server Agent (sftd)
 
-Then, install the `scaleft-server-tools` package:
+#### CoreOS
 
-### Ubuntu and Debian
+<a href="{{% relref "docs/sftd-coreos.md" %}}">Install sftd on CoreOS</a>
 
-```
-sudo apt-get install scaleft-server-tools
-```
+#### Redhat, CentOS, & Fedora
 
-The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify that the daemon is running.
+<a href="{{% relref "docs/sftd-redhat.md" %}}">Install sftd on Redhat, CentOS, & Fedora</a>
 
-### Red Hat, CentOS and Fedora
+#### Ubuntu
 
-```
-sudo yum install scaleft-server-tools
-```
-
-The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify that the daemon is running.
-
-### CoreOS
-
-On CoreOS, `sftd` is distributed as an App Container image (`.aci`) file. It runs under the [rkt container engine](https://coreos.com/rkt/) and is managed by a systemd service file.  An example of deploying the systemd service file is below:
-
-```
-# Download example unit file
-curl --location --output /etc/systemd/system/sftd.service https://dist.scaleft.com/server-tools/linux/latest/sftd.service
-
-# Load unit file into systemd
-systemctl daemon-reload
-systemctl enable sftd.service
-systemctl start sftd.service
-```
-
-For more information and advanced options, see the section on [sftd]({{% relref "sftd.md" %}}).
+<a href="{{% relref "docs/sftd-ubuntu.md" %}}">Install sftd on Ubuntu</a>

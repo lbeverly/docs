@@ -2,7 +2,7 @@
 title: "Initial Configuration"
 menu:
   main:
-    parent: 'user-guide'
+    parent: 'setup'
     weight: 1
 ---
 

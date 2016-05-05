@@ -2,7 +2,7 @@
 title: SSHing to a Server
 menu:
   main:
-    parent: 'user-guide'
+    parent: 'setup'
     weight: 7
 ---
 

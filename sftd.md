@@ -7,7 +7,7 @@ menu:
 
 ## Synopsis
 
-`sftd` [options...] command...
+    sftd [options...] command...
 
 ## Description
 

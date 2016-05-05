@@ -2,7 +2,7 @@
 title: "Granting Access"
 menu:
   main:
-    parent: 'user-guide'
+    parent: 'setup'
     weight: 4
 ---
 
