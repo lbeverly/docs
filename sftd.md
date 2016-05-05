@@ -26,10 +26,52 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 - [Installing sftd on Redhat, CentOS, & Fedora]({{% relref "sftd-redhat.md" %}})
 - [Installing sftd on Ubuntu & Debian]({{% relref "sftd-ubuntu.md" %}})
 
+## Files and Paths
+
+### Linux and Unix-like operating systems
+
+`sftd` on Linux runs under the `root` user.  Paths follow the Linux Standard Base specifications when applicable. 
+
+##### State Directory
+
+`/var/lib/sftd`
+
+##### Config File
+
+`/etc/sft/sftd.yaml`
+
+##### Log Directory
+
+`sftd` uses the system logger when available.
+
+##### Enrollment Token
+
+`/var/lib/sftd/enrollment.token`
+
+### Windows Server
+
+`sftd` on Windows runs under the `LocalSystem` account. `%LOCALAPPDIR%` is the default prefix for all filesystem paths.
+
+##### State Directory
+
+`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT`
+
+##### Config File
+
+`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT\sftd.yaml`
+
+##### Log Directory
+
+`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT\Logs`
+
+##### Enrollment Token
+
+`C:\windows\system32\config\systemprofile\AppData\Local\ScaleFT\enrollment.token`
+
 
 ## Configuration File
 
-`sftd` reads `/etc/sft/sftd.yaml` in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.
+`sftd` reads `sftd.yaml` in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.
 
 If this file is not available, `sftd` proceeds with the default values.
 
