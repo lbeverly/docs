@@ -1,5 +1,5 @@
 ---
-title: "Redhat, CentOS, & Fedora"
+title: "ScaleFT Client on Redhat, CentOS, & Fedora"
 menu:
   main:
     parent: 'client'

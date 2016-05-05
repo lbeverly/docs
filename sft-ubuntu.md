@@ -1,5 +1,5 @@
 ---
-title: "Ubuntu & Debian"
+title: "ScaleFT Client on Ubuntu & Debian"
 menu:
   main:
     parent: 'client'
