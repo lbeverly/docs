@@ -27,6 +27,7 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 - [Installing sftd on Redhat, CentOS, & Fedora]({{% relref "sftd-redhat.md" %}})
 - [Installing sftd on Ubuntu & Debian]({{% relref "sftd-ubuntu.md" %}})
 
+***
 ## Files and Paths
 
 ### Linux and Unix-like operating systems
@@ -69,7 +70,7 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 
 `C:\windows\system32\config\systemprofile\AppData\Local\ScaleFT\enrollment.token`
 
-
+***
 ## Configuration File
 
 `sftd` reads `sftd.yaml` in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.
@@ -80,19 +81,22 @@ If this file is not available, `sftd` proceeds with the default values.
 
 ```yaml
 ---
+# Common Configuration Options
 AutoEnroll:            true
 # Bastion is unset by default 
-BufferFile:            /var/lib/sftd/buffer.db
 # CanonicalName is unset by default
-EnrollmentTokenFile:   /var/lib/sftd/enrollment.token
 # InitialURL is unset by default
+
+## Additional Configuration Options
+BufferFile:            /var/lib/sftd/buffer.db
+EnrollmentTokenFile:   /var/lib/sftd/enrollment.token
 ServerFile:            /var/lib/sftd/device.server
 SSHDConfigFile:        /etc/ssh/sshd_config
 TokenFile:             /var/lib/sftd/device.token
 TrustedUserCAKeysFile: /var/lib/sftd/ssh_ca.pub
 ```
-
-### Configuration Options
+***
+### Common Configuration Options
 #### **`AutoEnroll`**
  _default: `true`_
 
@@ -111,19 +115,6 @@ Specifies the bastion-host clients will automatically use when connecting to
 this host.  
 *(see: [SSHing to a server]({{% relref "ssh.md" %}}) for more details)*
 
-#### **`BufferFile`**
-_default: `/var/lib/sftd/buffer.db`_
-
-Base path for `sftd` to write a local buffer for later synchronization to the
-ScaleFT platform. Path is appended to with `.` and an incrementing number as
-the program synchronizes to the ScaleFT platform. 
-
-#### **`EnrollmentTokenFile`**
-_default: `/var/lib/sftd/enrollment.token`_
-
-Path to the file containing a secret token for token based enrollment. This
-file is deleted after a successful enrollment to the platform.
-
 #### **`InitialURL`**
 _default: unset_
 
@@ -131,10 +122,28 @@ When AutoEnroll is set to true, this option specifies the InitialURL that the se
 
 When an enrollment.token is provided, this option is ignored. 
 
+***
+### Additional Configuration Options
+
+#### **`BufferFile`**
+_default: `/var/lib/sftd/buffer.db`_
+
+Path-prefix to the file(s) that sftd will use for it's local buffer store. 
+Individual buffers will have a '.' and an incrementing number be appended to
+the path-prefix. BufferFiles which have been synchronized will be removed
+automatically.
+
+#### **`EnrollmentTokenFile`**
+_default: `/var/lib/sftd/enrollment.token`_
+
+Path to the file containing a secret token for token based enrollment. This
+file is deleted after a successful enrollment to the platform.
+
+
 #### **`ServerFile`**
 _default: `/var/lib/sftd/device.server`_
 
-Path to file containing the ScaleFT server URL. 
+Path to the file that sftd uses to store the server URL that it will connect to.
 
 #### **`SSHDConfigFile`**
 _default: `/etc/ssh/sshd_config`_
@@ -151,6 +160,7 @@ _default: `/var/lib/sftd/ssh_ca.pub`_
 
 Path for `sftd` to write the list of trusted SSH Certificate authorities to.
 
+***
 ## Command Line Options
 
 * `--conf`: Provide alternative configuration file path.
@@ -159,6 +169,7 @@ Path for `sftd` to write the list of trusted SSH Certificate authorities to.
 * `-v`, `--version`: Display version.
 * `--syslog`: Force syslog logging.
 
+***
 ## Environment Variables
 
 `sftd` reads the following variables when starting:
