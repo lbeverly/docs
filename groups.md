@@ -6,8 +6,6 @@ menu:
     weight: 3
 ---
 
-## Groups
-
 ScaleFT uses groups to make it easy to grant permissions to collections of related
 users. Every ScaleFT team comes with two pre-configured groups:
 
