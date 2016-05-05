@@ -20,13 +20,12 @@ include those Users.
 
 ## Installation
 
-Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run:
+Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `sudo apt-get install scaleft-server-tools` or `sudo yum install scaleft-server-tools`. For detailed instructions specific to your operating system, see:
 
-```sudo apt-get install scaleft-server-tools```
+- [Installing sftd on CoreOS]({{% relref "sftd-coreos.md" %}})
+- [Installing sftd on Redhat, CentOS, & Fedora]({{% relref "sftd-redhat.md" %}})
+- [Installing sftd on Ubuntu & Debian]({{% relref "sftd-ubuntu.md" %}})
 
-or
-
-```sudo yum install scaleft-server-tools```
 
 ## Configuration File
 

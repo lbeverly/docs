@@ -79,4 +79,4 @@ robert_chiniquy@ip-172-31-23-43 ~ $ sudo systemctl start sftd.service
 robert_chiniquy@ip-172-31-23-43 ~ $</div>
 {{% /terminal %}}
 
-For more information and advanced options, see the section on [sftd]({{% relref "sftd.md" %}}).
+For usage information and advanced options, see the section on [sftd]({{% relref "sftd.md" %}}).

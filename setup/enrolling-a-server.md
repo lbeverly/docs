@@ -8,9 +8,10 @@ aliases:
   - /docs/enrolling-a-server
 ---
 
-Before you can access a Server via ScaleFT you'll need to associate your Server
-with a Project on your ScaleFT Team, then install the ScaleFT Server Tools on
-the server.
+Before you can access a Server via ScaleFT, you'll need to:
+
+- Associate your Server with a Project on your ScaleFT Team.
+- Install the [ScaleFT Server Tools]({{% relref "sftd.md" %}}) on the server.
 
 ## Enrolling your Server
 
