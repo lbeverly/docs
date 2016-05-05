@@ -14,11 +14,9 @@ to how servers enroll in Projects. Verifying the details of the devices that Use
 to access your infrastructure allows ScaleFT to make better-informed decisions about the
 risk of issuing credentials.
 
-<a href="{{% relref "docs/sft-osx.md" %}}">Install the ScaleFT Client on Mac OS X</a>
-
-<a href="{{% relref "docs/sft-redhat.md" %}}">Install the ScaleFT Client on Redhat, CentOS, & Fedora</a>
-
-<a href="{{% relref "docs/sft-ubuntu.md" %}}">Install the ScaleFT Client on Ubuntu</a>
+- [Installing the ScaleFT Client on Mac OS X]({{% relref "docs/sft-osx.md" %}})
+- [Installing the ScaleFT Client on Redhat, CentOS, & Fedora]({{% relref "docs/sft-redhat.md" %}})
+- [Installing the ScaleFT Client on Ubuntu]({{% relref "docs/sft-ubuntu.md" %}})
 
 
 ## Enrolling Your Device

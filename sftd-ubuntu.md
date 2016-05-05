@@ -52,4 +52,4 @@ robert_chiniquy@ubuntu:~$</div>{{% /terminal %}}
 The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify that the daemon is running.
 
 
-For more information and advanced options, see the section on [sftd]({{% relref "sftd.md" %}}).
+For usage information and advanced options, see the section on [sftd]({{% relref "sftd.md" %}}).
