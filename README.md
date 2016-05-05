@@ -9,6 +9,8 @@ Thanks for your contributions and fixes!
 
 ## Data for Examples
 
+When writing examples or showing terminal output, avoid putting in PII, and instead use values from bellow:
+
 | type        | value           | notes  |
 | ------------- |:-------------:| -----:|
 | IPv4 Address | `203.0.113.0/24` | [TEST-NET-3](https://tools.ietf.org/html/rfc5737) |
