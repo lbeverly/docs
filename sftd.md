@@ -38,6 +38,8 @@ If this file is not available, `sftd` proceeds with the default values.
 | Option        | Default Value | Description  |
 |:------------- | ------------- |:-------------|
 | `AutoEnroll` | `true` | `sftd` will attempt to automatically enroll on initial startup to ScaleFT. |
+| `CanonicalName` |  | Specifies the name clients should use/see when connecting to this host. Overrides the name found with `hostname` |
+| `Bastion` |  | Specifies the bastion-host clients will automatically use when connecting to this host. |
 | `BufferFile` | `/var/lib/sftd/buffer.db` | Base path for `sftd` to write a local buffer for later synchronization to the ScaleFT platform.  Path is appended to with `.` and an incrementing number as the program synchronizes to the ScaleFT platform. |
 | `EnrollmentTokenFile` | `/var/lib/sftd/enrollment.token` | Path to the file containing a secret token for token based enrollment.  This file is deleted after a successful enrollment to the platform.
 | `InitialURL` | | URL to ScaleFT instance to use for initial enrollment. |
