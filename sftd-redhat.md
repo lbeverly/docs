@@ -26,8 +26,7 @@ sudo yum install scaleft-server-tools
 ```
 
 {{% terminal %}}
-<div>
-[ec2-user@ip-172-31-29-165 ~]$ curl -C - https://www.scaleft.com/dl/scaleft_yum.repo | sudo tee /etc/yum.repos.d/scaleft.repo
+<div>[ec2-user@ip-172-31-29-165 ~]$ curl -C - https://www.scaleft.com/dl/scaleft_yum.repo | sudo tee /etc/yum.repos.d/scaleft.repo
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   158  100   158    0     0    537      0 --:--:-- --:--:-- --:--:--   537
