@@ -12,6 +12,6 @@ A Team is a group of people who work together on infrastructure and share an aut
 
 When you create a Team, by default you are given Team Administrator permissions. By default, any additional Team members will belong only to the `everyone` Group, which grants certain view-only permissions. Additional permissions, such as SSH access, must be granted by you or another Team Administrator.
 
-### Choose a Team name
+### Choose a Team Name
 
 Your Team name must be unique to you (and cannot contain spaces). All resources you create and manage with ScaleFT will be scoped to your Team.

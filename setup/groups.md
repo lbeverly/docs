@@ -16,7 +16,7 @@ users. Every ScaleFT Team comes with two default groups:
 If you want one of the default Groups to have access to your servers, skip ahead
 to [creating a Project]({{% relref "projects.md"%}}).
 
-To create a new group, click "Groups" in navigation panel, then click "New Group".
+To create a new group, click "Groups" in the navigation bar, then click "New Group".
 
 ### Naming a Group
 
