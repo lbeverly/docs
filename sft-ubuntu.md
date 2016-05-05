@@ -45,3 +45,9 @@ Unpacking scaleft-client-tools (0.18.6) ...
 Setting up scaleft-client-tools (0.18.6) ...
 robert_chiniquy@ubuntu:~$</div>
 {{% /terminal %}}
+
+After installing, be sure to [enroll your client]({{% relref "enrolling-a-client.md" %}}).
+
+## Usage
+
+Once your client is enrolled, you can `ssh` to your servers with `sft ssh [hostname]`. For more details, see [SSHing to a Server]({{% relref "ssh.md" %}}).

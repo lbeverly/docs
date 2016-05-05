@@ -23,3 +23,9 @@ Then, install the `scaleft-client-tools` package:
 ```
 sudo yum install scaleft-client-tools
 ```
+
+After installing, be sure to [enroll your client]({{% relref "enrolling-a-client.md" %}}).
+
+## Usage
+
+Once your client is enrolled, you can `ssh` to your servers with `sft ssh [hostname]`. For more details, see [SSHing to a Server]({{% relref "ssh.md" %}}).
