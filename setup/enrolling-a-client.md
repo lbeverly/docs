@@ -4,6 +4,8 @@ menu:
   main:
     parent: 'setup'
     weight: 6
+aliases:
+  - /docs/enrolling-a-client
 ---
 
 ScaleFT credentials are scoped to the combination of a User and the User's device.

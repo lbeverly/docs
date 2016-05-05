@@ -4,6 +4,8 @@ menu:
   main:
     parent: 'setup'
     weight: 2
+aliases:
+  - /docs/teams
 ---
 
 A Team is a group of people who work together on infrastructure and share an authentication method (such as OAuth).

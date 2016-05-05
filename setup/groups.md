@@ -4,6 +4,8 @@ menu:
   main:
     parent: 'setup'
     weight: 4
+aliases:
+  - /docs/groups
 ---
 
 ## Groups

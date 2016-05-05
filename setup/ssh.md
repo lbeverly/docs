@@ -4,6 +4,8 @@ menu:
   main:
     parent: 'setup'
     weight: 7
+aliases:
+  - /docs/ssh
 ---
 
 Once the initial configuration is complete, ScaleFT Users can SSH to all

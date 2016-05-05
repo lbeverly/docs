@@ -4,6 +4,8 @@ menu:
   main:
     parent: 'setup'
     weight: 0
+aliases:
+  - /docs/introduction
 ---
 
 ## Overview

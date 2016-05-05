@@ -4,6 +4,8 @@ menu:
   main:
     parent: 'setup'
     weight: 3
+aliases:
+  - /docs/projects
 ---
 
 A Project is a collection of resources (such as servers, load-balancers, web services, or VPNs) that share configurations and associated User Group permissions.
