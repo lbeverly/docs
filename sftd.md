@@ -76,28 +76,80 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 
 If this file is not available, `sftd` proceeds with the default values.
 
-### Configuration Options
+### Default Configuration:
 
-| Option        | Default Value | Description  |
-|:------------- | ------------- |:-------------|
-| `AutoEnroll` | `true` | `sftd` will attempt to automatically enroll on initial startup to ScaleFT. |
-| `CanonicalName` |  | Specifies the name clients should use/see when connecting to this host. Overrides the name found with `hostname` |
-| `Bastion` |  | Specifies the bastion-host clients will automatically use when connecting to this host. |
-| `BufferFile` | `/var/lib/sftd/buffer.db` | Base path for `sftd` to write a local buffer for later synchronization to the ScaleFT platform.  Path is appended to with `.` and an incrementing number as the program synchronizes to the ScaleFT platform. |
-| `EnrollmentTokenFile` | `/var/lib/sftd/enrollment.token` | Path to the file containing a secret token for token based enrollment.  This file is deleted after a successful enrollment to the platform.
-| `InitialURL` | | URL to ScaleFT instance to use for initial enrollment. |
-| `ServerFile` | `/var/lib/sftd/device.server` | Path to file containing the ScaleFT server URL. |
-| `SSHDConfigFile` | `/etc/ssh/sshd_config` | Path to `sshd` configuration file |
-| `TokenFile` | `/var/lib/sftd/device.token` | Path to file containing the secret token for authentication to ScaleFT. |
-| `TrustedUserCAKeysFile` | `/var/lib/sftd/ssh_ca.pub` | Path for `sftd` to write the list of trusted SSH Certificate authorities to. |
-
-### Configuration Example
-
-An example of enrolling a server with a custom ScaleFT instance:
 ```yaml
-AutoEnroll: true
-InitialURL: https://scaleft.example.com
+---
+AutoEnroll:            true
+# Bastion is unset by default 
+BufferFile:            /var/lib/sftd/buffer.db
+# CanonicalName is unset by default
+EnrollmentTokenFile:   /var/lib/sftd/enrollment.token
+# InitialURL is unset by default
+ServerFile:            /var/lib/sftd/device.server
+SSHDConfigFile:        /etc/ssh/sshd_config
+TokenFile:             /var/lib/sftd/device.token
+TrustedUserCAKeysFile: /var/lib/sftd/ssh_ca.pub
 ```
+
+### Configuration Options
+#### **`AutoEnroll`**
+ _default: `true`_
+
+`sftd` will attempt to automatically enroll on initial startup to ScaleFT. 
+
+#### **`CanonicalName`**
+_default: unset_
+
+Specifies the name clients should use/see when connecting to this host.
+Overrides the name found with `hostname`
+
+#### **`Bastion`**
+_default: unset_
+
+Specifies the bastion-host clients will automatically use when connecting to
+this host.  
+*(see: [SSHing to a server]({{% relref "ssh.md" %}}) for more details)*
+
+#### **`BufferFile`**
+_default: `/var/lib/sftd/buffer.db`_
+
+Base path for `sftd` to write a local buffer for later synchronization to the
+ScaleFT platform. Path is appended to with `.` and an incrementing number as
+the program synchronizes to the ScaleFT platform. 
+
+#### **`EnrollmentTokenFile`**
+_default: `/var/lib/sftd/enrollment.token`_
+
+Path to the file containing a secret token for token based enrollment. This
+file is deleted after a successful enrollment to the platform.
+
+#### **`InitialURL`**
+_default: unset_
+
+When AutoEnroll is set to true, this option specifies the InitialURL that the server can use to auto-enroll.
+
+When an enrollment.token is provided, this option is ignored. 
+
+#### **`ServerFile`**
+_default: `/var/lib/sftd/device.server`_
+
+Path to file containing the ScaleFT server URL. 
+
+#### **`SSHDConfigFile`**
+_default: `/etc/ssh/sshd_config`_
+
+Path to `sshd` configuration file. *Note sftd will modify this file*
+
+#### **`TokenFile`**
+_default: `/var/lib/sftd/device.token`_
+
+Path to file that sftd uses to store its secret token for authentication to ScaleFT.
+
+#### **`TrustedUserCAKeysFile`**
+_default: `/var/lib/sftd/ssh_ca.pub`_
+
+Path for `sftd` to write the list of trusted SSH Certificate authorities to.
 
 ## Command Line Options
 
