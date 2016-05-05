@@ -1,5 +1,5 @@
 ---
-title: "OS X"
+title: "ScaleFT Client on Mac OS X"
 menu:
   main:
     parent: 'client'
