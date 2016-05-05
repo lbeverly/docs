@@ -3,6 +3,7 @@ title: Server Daemon - sftd
 menu:
   main:
     parent: 'reference'
+    weight: 3
 ---
 
 ## Synopsis

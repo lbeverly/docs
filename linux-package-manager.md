@@ -3,6 +3,7 @@ title: Linux Repositories
 menu:
   main:
     parent: 'reference'
+    weight: 2
 ---
 
 ScaleFT distributes client and server packages for Linux via APT, RPM and AppContainer
