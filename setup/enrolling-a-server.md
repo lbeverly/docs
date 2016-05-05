@@ -4,6 +4,8 @@ menu:
   main:
     parent: 'setup'
     weight: 5
+aliases:
+  - /docs/enrolling-a-server
 ---
 
 Before you can access a Server via ScaleFT you'll need to associate your Server

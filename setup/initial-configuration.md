@@ -4,6 +4,8 @@ menu:
   main:
     parent: 'setup'
     weight: 1
+aliases:
+  - /docs/initial-configuration
 ---
 
 To get started with ScaleFT:
