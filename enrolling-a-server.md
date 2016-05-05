@@ -52,3 +52,17 @@ submit the server's signed AWS metadata as proof of its identity, and enroll it
 in your ScaleFT Project.
 
 <!-- todo: link to server install docs -->
+
+### Installing the ScaleFT Server Agent (sftd)
+
+#### CoreOS
+
+<a href="{{% relref "docs/sftd-coreos.md" %}}">Install sftd on CoreOS</a>
+
+#### Redhat, CentOS, & Fedora
+
+<a href="{{% relref "docs/sftd-redhat.md" %}}">Install sftd on Redhat, CentOS, & Fedora</a>
+
+#### Ubuntu
+
+<a href="{{% relref "docs/sftd-ubuntu.md" %}}">Install sftd on Ubuntu</a>

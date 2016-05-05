@@ -1,5 +1,5 @@
 ---
-title: "CoreOS sftd"
+title: "CoreOS"
 menu:
   main:
     parent: 'server'

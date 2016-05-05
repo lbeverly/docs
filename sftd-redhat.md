@@ -1,5 +1,5 @@
 ---
-title: "Redhat, CentOS, & Fedora sftd"
+title: "Redhat, CentOS, & Fedora"
 menu:
   main:
     parent: 'server'
@@ -24,12 +24,6 @@ Then, install the `scaleft-server-tools` package:
 ```
 sudo yum install scaleft-server-tools
 ```
-
-{{% terminal %}}
-<div>
-</div>
-{{% /terminal %}}
-
 
 The `sftd` daemon should start automatically. Check `/var/log/sftd.log` to verify that the daemon is running.
 

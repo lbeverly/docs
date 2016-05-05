@@ -23,8 +23,3 @@ Then, install the `scaleft-client-tools` package:
 ```
 sudo yum install scaleft-client-tools
 ```
-
-{{% terminal %}}
-<div>
-</div>
-{{% /terminal %}}

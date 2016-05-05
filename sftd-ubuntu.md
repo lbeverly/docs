@@ -1,5 +1,5 @@
 ---
-title: "Ubuntu sftd"
+title: "Ubuntu"
 menu:
   main:
     parent: 'server'
