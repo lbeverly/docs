@@ -13,7 +13,7 @@ Download the ScaleFT client [here](https://dist.scaleft.com/client-tools/windows
 
 Run the installation MSI.
 
-<img src="/docs/static/sft-windows-installation-complete.png" style="max-height: 550px;" />
+<img src="/docs/static/sft-windows-installation-complete.png" style="max-height: 385px;" />
 
 After installing, be sure to [enroll your client]({{% relref "enrolling-a-client.md" %}}).
 
