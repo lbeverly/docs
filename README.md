@@ -9,8 +9,12 @@ Thanks for your contributions and fixes!
 
 ## Data for Examples
 
-| Type        | Value           | extra  |
+| type        | value           | notes  |
 | ------------- |:-------------:| -----:|
 | IPv4 Address | `203.0.113.0/24` | [TEST-NET-3](https://tools.ietf.org/html/rfc5737) |
 | IPv6 Address | `2001:db8::/32` | [IPv6 Doc Subnet](https://en.wikipedia.org/wiki/IPv6_address#Documentation) |
-| Usernames | `alice@`, `bob@` | [Placeholder Names](https://en.wikipedia.org/wiki/Alice_and_Bob)  |
+| Usernames | `alice@`, `bob@` | [Placeholder Names](https://en.wikipedia.org/wiki/Alice_and_Bob) |
+| Domain Name (Corporate) | `corp.example.com` | |
+| Hostname (Windows) | `WIN-C81EJK` | |
+| Hostname (Linux) | `web0.example.com` | |
+
