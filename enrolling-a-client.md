@@ -1,17 +1,22 @@
 ---
-title: Enrolling a Client
+title: Setting up a Client
 menu:
   main:
     parent: 'setup'
     weight: 6
 ---
 
-ScaleFT credentials are granular to the combination of a User and the User's device.
-Users must enroll their devices with the ScaleFT Client, similarly to how servers
-enroll in Projects. Verifying the details of the devices that Users use to access
-your infrastructure allows ScaleFT to make better-informed decisions about the risk
-of issuing credentials.
+ScaleFT credentials are scoped to the combination of a User and the User's device.
+Users must first install the ScaleFT Client, and then enroll their devices, similarly
+to how servers enroll in Projects. Verifying the details of the devices that Users use
+to access your infrastructure allows ScaleFT to make better-informed decisions about the
+risk of issuing credentials.
 
+<a href="{{% relref "docs/sft-osx.md" %}}">Install the ScaleFT Client on Mac OS X</a>
+
+<a href="{{% relref "docs/sft-redhat.md" %}}">Install the ScaleFT Client on Redhat, CentOS, & Fedora</a>
+
+<a href="{{% relref "docs/sft-ubuntu.md" %}}">Install the ScaleFT Client on Ubuntu</a>
 
 
 ## Enrolling Your Device
