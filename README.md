@@ -13,3 +13,4 @@ Thanks for your contributions and fixes!
 | ------------- |:-------------:| -----:|
 | IPv4 Address | `203.0.113.0/24` | [TEST-NET-3](https://tools.ietf.org/html/rfc5737) |
 | IPv6 Address | `2001:db8::/32` | [IPv6 Doc Subnet](https://en.wikipedia.org/wiki/IPv6_address#Documentation) |
+| Usernames | `alice@`, `bob@` | [Placeholder Names](https://en.wikipedia.org/wiki/Alice_and_Bob)  |
