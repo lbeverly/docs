@@ -3,7 +3,7 @@ title: "ScaleFT Client on Windows"
 menu:
   main:
     parent: 'client'
-    Name: "Windows"
+    name: "Windows Client"
     weight: 5
 ---
 

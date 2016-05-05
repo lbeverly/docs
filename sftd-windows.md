@@ -1,8 +1,9 @@
 ---
-title: "Windows"
+title: "Windows Server"
 menu:
   main:
     parent: 'server'
+    name: "Windows Server"
     weight: 5
 ---
 
