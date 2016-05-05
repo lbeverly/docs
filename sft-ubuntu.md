@@ -8,7 +8,19 @@ menu:
 
 ## Installing ScaleFT Client Tools
 
-First, [add the ScaleFT APT repository]({{% relref "linux-package-manager.md#ubuntu-and-debian" %}}).
+First, [add the ScaleFT APT repository]({{% relref "linux-package-manager.md#ubuntu-and-debian" %}}):
+
+```
+# Add the ScaleFT apt repo to your /etc/apt/sources.list system config file:
+echo "deb http://pkg.scaleft.com/deb linux main" | sudo tee -a /etc/apt/sources.list
+
+# Trust the repository signing key:
+curl -C - https://www.scaleft.com/dl/scaleft_deb_key.asc | sudo apt-key add -
+
+# Retrieve information about new packages
+sudo apt-get update
+```
+
 
 Then, install the `scaleft-client-tools` package:
 
