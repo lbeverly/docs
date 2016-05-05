@@ -8,7 +8,18 @@ menu:
 
 ## Installing ScaleFT Server Daemon (sftd)
 
-First, [add the ScaleFT package repository for your Linux distribution]({{% relref "linux-package-manager.md" %}}).
+First, add the ScaleFT package repository:
+
+```
+# Add the ScaleFT apt repo to your /etc/apt/sources.list system config file:
+echo "deb http://pkg.scaleft.com/deb linux main" | sudo tee -a /etc/apt/sources.list
+
+# Trust the repository signing key:
+curl -C - https://www.scaleft.com/dl/scaleft_deb_key.asc | sudo apt-key add -
+
+# Retrieve information about new packages
+sudo apt-get update
+```
 
 Then, install the `scaleft-server-tools` package:
 

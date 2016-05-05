@@ -51,3 +51,4 @@ account, if that server has not been previously enrolled in ScaleFT, `sftd` will
 submit the server's signed AWS metadata as proof of its identity, and enroll it
 in your ScaleFT Project.
 
+<!-- todo: link to server install docs -->

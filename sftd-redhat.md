@@ -8,7 +8,16 @@ menu:
 
 ## Installing ScaleFT Server Daemon (sftd)
 
-First, [add the ScaleFT package repository for your Linux distribution]({{% relref "linux-package-manager.md" %}}).
+First, add the ScaleFT package repository:
+
+```
+# Add the ScaleFT yum repository
+curl -C - https://www.scaleft.com/dl/scaleft_yum.repo | sudo tee /etc/yum.repos.d/scaleft.repo
+
+# Trust the repository signing key
+sudo rpm --import https://www.scaleft.com/dl/scaleft_rpm_key.asc
+```
+
 
 Then, install the `scaleft-server-tools` package:
 
