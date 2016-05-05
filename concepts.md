@@ -3,7 +3,6 @@ title: "Concepts"
 menu:
   main:
     parent: 'reference'
-    weight: 0
 ---
 
 ### Team
