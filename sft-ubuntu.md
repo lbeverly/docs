@@ -3,6 +3,7 @@ title: "ScaleFT Client on Ubuntu & Debian"
 menu:
   main:
     parent: 'client'
+    name: 'Ubuntu & Debian Client'
     weight: 5
 ---
 

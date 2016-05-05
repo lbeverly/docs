@@ -3,6 +3,7 @@ title: "ScaleFT Client on Mac OS X"
 menu:
   main:
     parent: 'client'
+    name: 'Mac OS X Client'
     weight: 5
 ---
 
