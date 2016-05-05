@@ -3,7 +3,7 @@ title: "Groups"
 menu:
   main:
     parent: 'none'
-    weight: 3
+    weight: 4
 ---
 
 ScaleFT uses groups to make it easy to grant permissions to collections of related

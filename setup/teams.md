@@ -14,15 +14,4 @@ When you create a Team, by default you are given Team Administrator permissions.
 
 ### Choose a Team name
 
-Your Team name must be unique to you. All resources you create and manage with ScaleFT will be scoped to your Team.
-
-### Select an Authentication Method
-
-#### Google Apps Account
-
-Your Google Apps Domain will be used as the Identity Provider (IdP) for your Team. Any user in your Google Apps Domain will be allowed to join your Team.
-
-#### Username & Password
-
-ScaleFT acts as the Identity Provider (IdP) for your Team. Every Team member will be required to configure a username and password when they create an account.
-
+Your Team name must be unique to you (and cannot contain spaces). All resources you create and manage with ScaleFT will be scoped to your Team.
