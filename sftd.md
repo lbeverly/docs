@@ -86,14 +86,6 @@ AutoEnroll:            true
 # Bastion is unset by default 
 # CanonicalName is unset by default
 # InitialURL is unset by default
-
-## Additional Configuration Options
-BufferFile:            /var/lib/sftd/buffer.db
-EnrollmentTokenFile:   /var/lib/sftd/enrollment.token
-ServerFile:            /var/lib/sftd/device.server
-SSHDConfigFile:        /etc/ssh/sshd_config
-TokenFile:             /var/lib/sftd/device.token
-TrustedUserCAKeysFile: /var/lib/sftd/ssh_ca.pub
 ```
 ***
 ### Common Configuration Options
