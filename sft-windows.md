@@ -9,7 +9,7 @@ menu:
 
 ## Installation
 
-Download the ScaleFT client [here](https://dist.scaleft.com/client-tools/windows/v0.18.6/ScaleFT-0.18.6.msi).
+Download the ScaleFT client [here](https://dist.scaleft.com/client-tools/windows/latest/ScaleFT.msi).
 
 Run the installation MSI.
 
