@@ -17,6 +17,7 @@ risk of issuing credentials.
 - [Installing the ScaleFT Client on Mac OS X]({{% relref "docs/sft-osx.md" %}})
 - [Installing the ScaleFT Client on Redhat, CentOS, & Fedora]({{% relref "docs/sft-redhat.md" %}})
 - [Installing the ScaleFT Client on Ubuntu]({{% relref "docs/sft-ubuntu.md" %}})
+- [Installing the ScaleFT Client on Windows]({{% relref "docs/sft-windows.md" %}})
 
 
 ## Enrolling Your Device

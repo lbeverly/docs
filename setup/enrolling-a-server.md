@@ -69,3 +69,7 @@ in your ScaleFT Project.
 #### Ubuntu
 
 <a href="{{% relref "docs/sftd-ubuntu.md" %}}">Install sftd on Ubuntu</a>
+
+#### Windows
+
+<a href="{{% relref "docs/sftd-windows.md" %}}">Install sftd on Windows</a>
