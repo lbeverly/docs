@@ -8,8 +8,6 @@ menu:
 
 ## Installing ScaleFT Server Daemon (sftd)
 
-First, add the ScaleFT signing key:
-
 ```
 # Add ScaleFT signing key to rkt
 sudo rkt trust --prefix=scaleft.com/sftd
@@ -46,8 +44,6 @@ image: signature verified:
 sha512-6ecfc7aca9cb9afa41b69e21c7caef1f
 robert_chiniquy@ip-172-31-23-43 ~ $</div>
 {{% /terminal %}}
-
-Then, install the `scaleft-server-tools` package:
 
 On CoreOS, `sftd` is distributed as an App Container image (`.aci`) file. It runs under the [rkt container engine](https://coreos.com/rkt/) and is managed by a systemd service file.  An example of deploying the systemd service file is below:
 
