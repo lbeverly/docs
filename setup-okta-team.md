@@ -11,6 +11,7 @@ menu:
 <img src="/docs/static/okta-config-page.png" style="max-height: 621px;" />
 
 2\. In a separate tab, log in to your Okta instance
+
 3\. Click the "Admin" button in the upper right corner
 
 <img src="/docs/static/click-admin-button.png" style="max-height: 621px;" />
@@ -44,6 +45,7 @@ menu:
 <img src="/docs/static/view-setup-instructions-button.png" style="max-height: 621px;" />
 
 11\. Follow the instructions on the "View Setup Instructions" page to setup your `sshUserName` attribute, if desired.
+
 12\. From this page, you will need the `Login Provider SSO URL`, the `Identity Provider Issuer`, and the `Identity Provider x.509 Certificate` in PEM format
 
 <img src="/docs/static/setup-instructions.png" style="max-height: 621px;" />
