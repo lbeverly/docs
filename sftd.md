@@ -16,7 +16,7 @@ menu:
 
 For ScaleFT Access it installs trusted CA certificates to `sshd`, tracks logins to the server,
 and manages local user accounts. If a User Group that has the `server_admin` flag enabled is
-added to the Project for an `sftd`-managed server, `sftd` will modify the sudoers file to
+added to the Project for an **`sftd`**-managed server, **`sftd`** will modify the sudoers file to
 include those Users.
 
 ## Installation
@@ -26,6 +26,7 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 - [Installing sftd on CoreOS]({{% relref "sftd-coreos.md" %}})
 - [Installing sftd on Redhat, CentOS, & Fedora]({{% relref "sftd-redhat.md" %}})
 - [Installing sftd on Ubuntu & Debian]({{% relref "sftd-ubuntu.md" %}})
+- [Installing sftd on Windows]({{% relref "sftd-windows.md" %}})
 
 ***
 ## Files and Paths
@@ -44,7 +45,7 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 
 ##### Log Directory
 
-`sftd` uses the system logger when available.
+**`sftd`** uses the system logger when available.
 
 ##### Enrollment Token
 
@@ -52,7 +53,7 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 
 ### Windows Server
 
-`sftd` on Windows runs under the `LocalSystem` account. `%LOCALAPPDIR%` is the default prefix for all filesystem paths.
+**`sftd`** on Windows runs under the **`LocalSystem`** account. **`%LOCALAPPDIR%`** is the default prefix for all filesystem paths.
 
 ##### State Directory
 
@@ -73,9 +74,9 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 ***
 ## Configuration File
 
-`sftd` reads `sftd.yaml` in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.
+**`sftd`** reads **`sftd.yaml`** in order to set configuration settings.  This file is in the [YAML](http://yaml.org/) format.
 
-If this file is not available, `sftd` proceeds with the default values.
+If this file is not available, **`sftd`** proceeds with the default values.
 
 ### Default Configuration:
 
@@ -92,13 +93,7 @@ AutoEnroll:            true
 #### **`AutoEnroll`**
  _default: `true`_
 
-`sftd` will attempt to automatically enroll on initial startup to ScaleFT. 
-
-#### **`CanonicalName`**
-_default: unset_
-
-Specifies the name clients should use/see when connecting to this host.
-Overrides the name found with `hostname`
+`true` or `false`. When true, **`sftd`** will attempt to automatically enroll with ScaleFT on initial startup.
 
 #### **`Bastion`**
 _default: unset_
@@ -107,11 +102,16 @@ Specifies the bastion-host clients will automatically use when connecting to
 this host.  
 *(see: [SSHing to a server]({{% relref "ssh.md" %}}) for more details)*
 
+#### **`CanonicalName`**
+_default: unset_
+
+Specifies the name clients should use/see when connecting to this host.
+Overrides the name found with `hostname`
+
 #### **`InitialURL`**
 _default: unset_
 
 When AutoEnroll is set to true, this option specifies the InitialURL that the server can use to auto-enroll.
-
 When an enrollment.token is provided, this option is ignored. 
 
 ***
@@ -120,9 +120,9 @@ When an enrollment.token is provided, this option is ignored.
 #### **`BufferFile`**
 _default: `/var/lib/sftd/buffer.db`_
 
-Path-prefix to the file(s) that sftd will use for it's local buffer store. 
-Individual buffers will have a '.' and an incrementing number be appended to
-the path-prefix. BufferFiles which have been synchronized will be removed
+Path-prefix to the file(s) that **`sftd`** will use for it's local buffer store.
+Individual buffers will have a '.' and an incrementing number will be appended
+to the path-prefix. BufferFiles which have been synchronized will be removed
 automatically.
 
 #### **`EnrollmentTokenFile`**
@@ -140,7 +140,7 @@ Path to the file that sftd uses to store the server URL that it will connect to.
 #### **`SSHDConfigFile`**
 _default: `/etc/ssh/sshd_config`_
 
-Path to `sshd` configuration file. *Note sftd will modify this file*
+Path to **`sshd`** configuration file. *Note **`sftd`** will modify this file*
 
 #### **`TokenFile`**
 _default: `/var/lib/sftd/device.token`_
@@ -150,7 +150,7 @@ Path to file that sftd uses to store its secret token for authentication to Scal
 #### **`TrustedUserCAKeysFile`**
 _default: `/var/lib/sftd/ssh_ca.pub`_
 
-Path for `sftd` to write the list of trusted SSH Certificate authorities to.
+Path for **`sftd`** to write the list of trusted SSH Certificate authorities to.
 
 ***
 ## Command Line Options
@@ -164,7 +164,7 @@ Path for `sftd` to write the list of trusted SSH Certificate authorities to.
 ***
 ## Environment Variables
 
-`sftd` reads the following variables when starting:
+**`sftd`** reads the following variables when starting:
 
-  * `SFT_DEBUG`:
-    Prints additional debugging to `stderr` when set.
+  * **`SFT_DEBUG`**:
+    Prints additional debugging to **`stderr`** when set.
