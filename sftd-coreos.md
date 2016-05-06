@@ -8,6 +8,8 @@ menu:
 
 ## Installing ScaleFT Server Daemon (sftd)
 
+First, add the ScaleFT signing key, and then install **`sftd`** to run under `rkt` and `systemd`.
+
 ```
 # Add ScaleFT signing key to rkt
 sudo rkt trust --prefix=scaleft.com/sftd
