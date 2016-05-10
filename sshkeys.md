@@ -87,16 +87,16 @@ Once logged in, this MitM can do anything it likes up to, and including sending
 any commands it wants as though the user had input them; all without ever
 seeing the private key.
 
-The SSH Protocol has a solution for this problem, it is called host-key
-validation, and it is essentially the same thing as the Public Key
-Authentication explained above, but backwards. The server authenticates itself
-to the client by proving that it has the private key corresponding to a public
-key known to the client. The problem with this solution is that the public key
-must be known to the client in advance. (Just as with public key authentication
-before certificate based authentication.) As a solution to this,
-certificate-based host-key validation is also supported in openssh, but getting
-revocations to client machines is considerably less reliable than getting them
-to servers, which was already a hard problem.
+The SSH Protocol has a solution for this problem called host-key validation,
+and it is essentially the same thing as the Public Key Authentication explained
+above, but backwards. The server authenticates itself to the client by proving
+that it has the private key corresponding to a public key known to the client.
+The problem with this solution is that the public key must be known to the
+client in advance. (Just as with public key authentication before certificate
+based authentication.) As a solution to this, certificate-based host-key
+validation is also supported in openssh, but getting revocations to client
+machines is considerably less reliable than getting them to servers, which was
+already a hard problem.
 
 By providing a secure, out-of-band mechanism to exchange the public key of all
 your hosts, ScaleFT ensures that your SSH client will always have the correct
@@ -139,3 +139,21 @@ meaningful, and you should definitely not proceed if you see it.
 [9]: https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-ornaghi-valleri.pdf
 [10]: https://simple.wikipedia.org/wiki/Diffie-Hellman_key_exchange
 [11]: https://weakdh.org/
+
+<small>
+<small>
+<div style="line-height: 60%">
+1. <https://simple.wikipedia.org/wiki/Public-key_cryptography><br>
+2. <https://tools.ietf.org/html/rfc4252#section-7><br>
+3. <https://help.ubuntu.com/community/SSH/OpenSSH/Keys><br>
+4. <https://en.wikipedia.org/wiki/Password_strength><br>
+5. <https://en.wikipedia.org/wiki/Key_(cryptography)><br>
+6. <http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/usr.bin/ssh/PROTOCOL.certkeys?annotate=HEAD><br>
+7. <http://link.springer.com/chapter/10.1007/978-3-0348-8295-8_17><br>
+8. <https://www.giac.org/paper/gsec/2034/conducting-ssh-man-middle-attacks-sshmitm/103515><br>
+9. <https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-ornaghi-valleri.pdf><br>
+10. <https://simple.wikipedia.org/wiki/Diffie-Hellman_key_exchange><br>
+11. <https://weakdh.org/><br>
+</div>
+</small>
+</small>
