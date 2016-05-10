@@ -19,6 +19,7 @@ and manages local user accounts. If a User Group that has the `server_admin` fla
 added to the Project for an **`sftd`**-managed server, **`sftd`** will modify the sudoers file to
 include those Users.
 
+***
 ## Installation
 
 Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `sudo apt-get install scaleft-server-tools` or `sudo yum install scaleft-server-tools`. For detailed instructions specific to your operating system, see:
@@ -35,41 +36,43 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 
 `sftd` on Linux runs under the `root` user.  Paths follow the Linux Standard Base specifications when applicable. 
 
-##### State Directory
+#### State Directory
 
-`/var/lib/sftd`
+**`/var/lib/sftd`**
 
-##### Config File
+#### Config File
 
-`/etc/sft/sftd.yaml`
+**`/etc/sft/sftd.yaml`**
 
-##### Log Directory
+#### Log Directory:
 
 **`sftd`** uses the system logger when available.
 
-##### Enrollment Token
+#### Enrollment Token:
 
-`/var/lib/sftd/enrollment.token`
+**`/var/lib/sftd/enrollment.token`**
+
+****
 
 ### Windows Server
 
 **`sftd`** on Windows runs under the **`LocalSystem`** account. **`%LOCALAPPDIR%`** is the default prefix for all filesystem paths.
 
-##### State Directory
+#### State Directory:
 
-`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT`
+**`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT`**
 
-##### Config File
+#### Config File:
 
-`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT\sftd.yaml`
+**`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT\sftd.yaml`**
 
-##### Log Directory
+#### Log Directory:
 
-`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT\Logs`
+**`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT\Logs`**
 
-##### Enrollment Token
+#### Enrollment Token:
 
-`C:\windows\system32\config\systemprofile\AppData\Local\ScaleFT\enrollment.token`
+**`C:\windows\system32\config\systemprofile\AppData\Local\ScaleFT\enrollment.token`**
 
 ***
 ## Configuration File
@@ -82,7 +85,9 @@ If this file is not available, **`sftd`** proceeds with the default values.
 
 ```yaml
 ---
-# Common Configuration Options
+# Common Configuration Options:
+#
+# AccessAddress is unset by default
 AutoEnroll:            true
 # Bastion is unset by default 
 # CanonicalName is unset by default
@@ -90,10 +95,17 @@ AutoEnroll:            true
 ```
 ***
 ### Common Configuration Options
+#### **`AccessAddress`** 
+_default: unset_ 
+
+For hosts with multiple interfaces, or behind DNATs; specifies the
+address clients will use when connecting to this host. 
+
 #### **`AutoEnroll`**
  _default: `true`_
 
-`true` or `false`. When true, **`sftd`** will attempt to automatically enroll with ScaleFT on initial startup.
+`true` or `false`. When true, **`sftd`** will attempt to automatically enroll
+with ScaleFT on initial startup.
 
 #### **`Bastion`**
 _default: unset_
@@ -111,8 +123,9 @@ Overrides the name found with `hostname`
 #### **`InitialURL`**
 _default: unset_
 
-When AutoEnroll is set to true, this option specifies the InitialURL that the server can use to auto-enroll.
-When an enrollment.token is provided, this option is ignored. 
+When AutoEnroll is set to true, this option specifies the InitialURL that the
+server can use to auto-enroll.  When an enrollment.token is provided, this
+option is ignored. 
 
 ***
 ### Additional Configuration Options
