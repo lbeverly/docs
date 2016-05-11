@@ -20,15 +20,20 @@ There are two methods to enroll a server:
 1. Use an Enrollment Token
 2. Use an AWS Account
 
-### Associating any Server using an Enrollment Token
+### Using an Enrollment Token
 
 In the ScaleFT Dashboard, browse to the desired Project, then select
-"Server Enrollment Tokens". Generate a new Enrollment Token with a
-description of what the token is used for, such as "First Production Buildout".
+"Server Enrollment Tokens". Either use an existing token, or generate a new
+Enrollment Token with a description of what the token is used for, such as
+"First Production Buildout", or "Testing ScaleFT".
 
-On the server in question (or in your configuration management system), ensure
-the directory `/var/lib/sftd` exists, and copy the token into the file
-`/var/lib/sftd/enrollment.token`
+Once you have a token, ensure it exists on the server in question either via
+your configuration management system, or by just writing the token to a file
+yourself.
+
+On Linux, the appropriate path is `/var/lib/sftd/enrollment.token`.
+
+On Windows, the appropriate path is `C:\windows\system32\config\systemprofile\AppData\Local\ScaleFT\enrollment.token`.
 
 ### Associating an AWS Account with a ScaleFT Project
 
