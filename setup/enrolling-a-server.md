@@ -8,19 +8,21 @@ aliases:
   - /docs/enrolling-a-server
 ---
 
-Before you can access a Server via ScaleFT, you'll need to:
+Before you can access a Server via ScaleFT, you'll need to install
+the [ScaleFT Server Tools]({{% relref "sftd.md" %}}) on the server,
+and enroll your server into a Project,
 
-- Associate your Server with a Project on your ScaleFT Team.
-- Install the [ScaleFT Server Tools]({{% relref "sftd.md" %}}) on the server.
+- [Installing the ScaleFT Agent on CoreOS]({{% relref "docs/sftd-coreos.md" %}})
+- [Installing the ScaleFT Agent on Redhat, CentOS, & Fedora]({{% relref "docs/sftd-redhat.md" %}})
+- [Installing the ScaleFT Agent on Ubuntu]({{% relref "docs/sftd-ubuntu.md" %}})
+- [Installing the ScaleFT Agent on Windows]({{% relref "docs/sftd-windows.md" %}})
 
-## Enrolling your Server
+#### Using an Enrollment Token
 
-There are two methods to enroll a server:
+The primary method of enrolling a Server into your ScaleFT Project is
+to use an Enrollment Token.
 
-1. Use an Enrollment Token
-2. Use an AWS Account
-
-### Using an Enrollment Token
+<img src="/docs/static/basic-usage-images/Server-Setup.png" class="center-block" style="max-width: 681px;" />
 
 In the ScaleFT Dashboard, browse to the desired Project, then select
 "Server Enrollment Tokens". Either use an existing token, or generate a new
@@ -35,11 +37,12 @@ On Linux, the appropriate path is `/var/lib/sftd/enrollment.token`.
 
 On Windows, the appropriate path is `C:\windows\system32\config\systemprofile\AppData\Local\ScaleFT\enrollment.token`.
 
-### Associating an AWS Account with a ScaleFT Project
+#### Associating an AWS Account with a ScaleFT Project
 
-ScaleFT supports associating an AWS account with a ScaleFT Project. The ScaleFT
-Server Daemon uses AWS's signed instance metadata to identify itself, and can
-automatically enroll into the Project.
+ScaleFT supports optionally associating an AWS account with a ScaleFT Project.
+
+The ScaleFT Server Daemon uses AWS's signed instance metadata to identify itself, and can
+automatically enroll into a Project in your Team.
 
 This method is best when all your AWS servers will belong to only one Project.
 You can use this method to enroll servers into that Project instead of using an
@@ -60,21 +63,3 @@ submit the server's signed AWS metadata as proof of its identity, and enroll it
 in your ScaleFT Project.
 
 <!-- todo: link to server install docs -->
-
-### Installing the ScaleFT Server Agent (sftd)
-
-#### CoreOS
-
-<a href="{{% relref "docs/sftd-coreos.md" %}}">Install sftd on CoreOS</a>
-
-#### Redhat, CentOS, & Fedora
-
-<a href="{{% relref "docs/sftd-redhat.md" %}}">Install sftd on Redhat, CentOS, & Fedora</a>
-
-#### Ubuntu
-
-<a href="{{% relref "docs/sftd-ubuntu.md" %}}">Install sftd on Ubuntu</a>
-
-#### Windows
-
-<a href="{{% relref "docs/sftd-windows.md" %}}">Install sftd on Windows</a>

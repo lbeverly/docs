@@ -8,37 +8,22 @@ aliases:
   - /docs/ssh
 ---
 
+This diagram shows the logical flow of authentication which will occur in usual
+use of ScaleFT. From the perspective of the User, this can be as simple as typing
+**`ssh <hostname>`**.
+
+<img src="/docs/static/basic-usage-images/Daily-Use.png" class="center-block" style="max-width: 681px;" />
+
 Once the [initial configuration]({{% relref "initial-configuration.md" %}}) is
-complete, ScaleFT Users can SSH to all enrolled servers.
+complete, Users in your Team can SSH to all servers they've been granted access to.
 
-## Using sft client
+### Configuring ScaleFT as a ProxyCommand for ssh
 
-From an enrolled client, run **`sft ssh <hostname>`** where **`<hostname>`** is
-the name of any enrolled host. You can see a list of available hosts by
-browsing to your project in the ScaleFT Dashboard.
+This is the recommended method of ScaleFT SSH integration.
 
-### `sft ssh`
-
-{{% terminal %}}
-<div>[alice@mylaptop]$ sft ssh web0.example.com
-Welcome to Ubuntu 15.04 (GNU/Linux 3.19.0-15-generic x86_64)
-
- * Documentation:  https://help.ubuntu.com/
-----------------------------------------------------------------
-  Ubuntu 15.04                                built 2016-01-06
-----------------------------------------------------------------
-Last login: Thu Jan 4 07:14:03 2016 from 198.51.100.23
-alice@web0$</div>{{% /terminal %}}
-
-**Note:** the first time you run **`sft ssh`** you will be prompted to approve your
-client's access to infrastructure credentials. This approval will last for up to
-10 hours.
-
-<img alt="client authorization screenshot" src="/docs/static/client-request-authorization.png" style="max-height: 621px;" />
-
-
-
-### Using sft as a ProxyCommand for ssh
+First, run **`sft proxycommand --config`**. This command will output a configuration block
+for use in your personal SSH configuration file, usually at **`~/.ssh/config`**.
+Simply append the configuration there.
 
 **Note:** With the auto-generated configuration, you will not be prompted to
 approve your client's access automatically when you run **`ssh`**. If your client
@@ -65,6 +50,36 @@ Welcome to Ubuntu 15.04 (GNU/Linux 3.19.0-15-generic x86_64)
 ----------------------------------------------------------------
 Last login: Thu Jan 4 07:14:03 2016 from 198.51.100.23
 alice@web0$</div>{{% /terminal %}}
+
+## Using sft client
+
+Users who prefer not to use **`ssh proxycommand`** integration can use the **`sft`**
+tool to access servers.
+
+From an enrolled client, run **`sft ssh <hostname>`** where **`<hostname>`** is
+the name of any enrolled server. You can see a list of available servers by
+browsing to your project in the ScaleFT Dashboard, or with the command
+**`sft list-servers`**.
+
+### `sft ssh`
+
+{{% terminal %}}
+<div>[alice@mylaptop]$ sft ssh web0.example.com
+Welcome to Ubuntu 15.04 (GNU/Linux 3.19.0-15-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+----------------------------------------------------------------
+  Ubuntu 15.04                                built 2016-01-06
+----------------------------------------------------------------
+Last login: Thu Jan 4 07:14:03 2016 from 198.51.100.23
+alice@web0$</div>{{% /terminal %}}
+
+**Note:** the first time you run **`sft ssh`** you will be prompted to approve your
+client's access to infrastructure credentials. This approval may last for up to
+10 hours.
+
+<img alt="client authorization screenshot" src="/docs/static/client-request-authorization.png" style="max-height: 621px;" />
+
 
 ### Using sft with Bastion hosts
 
