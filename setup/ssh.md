@@ -10,7 +10,7 @@ aliases:
 
 This diagram shows the logical flow of authentication which will occur in usual
 use of ScaleFT. From the perspective of the User, this can be as simple as typing
-**`ssh <hostname>`**, and clicking "Approve".
+**`ssh <hostname>`**.
 
 <img src="/docs/static/basic-usage-images/Daily-Use.png" class="center-block" style="max-width: 681px;" />
 
