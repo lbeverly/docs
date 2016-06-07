@@ -8,21 +8,25 @@ aliases:
   - /docs/initial-configuration
 ---
 
-To get started with ScaleFT, you'll need to create a team and do some initial configuration so ScaleFT can manage your servers and your users can access them.
+To get started with ScaleFT, you'll need to create a team and do some initial setup so ScaleFT can manage your servers and your users can access them.
 
-## Step 1: Create a Team
+## Create a Team
 
-[Create a Team]({{% relref "teams.md" %}}) in the ScaleFT platform, configuring an authentication method for all Team members.
+Create a [team]({{% relref "teams.md" %}}) in the ScaleFT dashboard. This means choosing a team name, and configuring an [authentication method]({{% relref "authentication.md" %}}) that ScaleFT can use to identify users in your team.
+
+Team names are case-insensitive, alphanumeric, and may contain dots, dashes, and underscores.
 
 <img src="/docs/static/basic-usage-images/Initial-Admin-Setup.png" class="center-block" style="max-width: 521px;" />
 
-## Step 2: Configure Projects & Permissions
+## Configure a Project
 
-[Create a Project]({{% relref "projects.md" %}}) in ScaleFT, and link it to a User Group (you may also use the universal groups `everyone` and `owners`). This configures the permissions for servers in that Project so you can control who can access them.
+1. Navigate to the "Projects" tab, and click "New Project".
+2. Name your project, and click "Submit".
+3. Navigate to the "Permissions" tab and click "Add Group". You'll need to enter a group name. If you're just trying ScaleFT out for the first time, you can just use the pre-existing `everyone` group, and select the "Admin" option to grant maximum permissions.
 
-<img src="/docs/static/basic-usage-images/Initial-Admin-Configuration.png" class="center-block" style="max-width: 521px;" />
+Adding a group to your project lets you grant groups of users access to the servers in the project. Later, when you've added servers to the project, and more users have joined your team, configuring projects and groups will allow you fine-grained control of access across your servers.
 
-## Step 3: Deploy ScaleFT
+## Deploy ScaleFT
 
 Install the ScaleFT server daemon (`sftd`) on one or more servers, and [enroll those servers]({{% relref "enrolling-a-server.md" %}}) in your Project.
 
@@ -32,9 +36,9 @@ The ScaleFT Daemon (`sftd`) will automatically configure your servers to trust c
 
 You can also configure `sftd` to create user accounts for the members of your Team, and even manage `sudo` access with ScaleFT roles and permissions.
 
-## Step 4: Initial User Setup
+## Initial User Setup
 
-Have Team members install the ScaleFT Client and [enroll their Clients]({{% relref "enrolling-a-client.md" %}}) in your Team.
+Have Team members install the ScaleFT Client and [register it with ScaleFT]({{% relref "enrolling-a-client.md" %}}).
 
 <img src="/docs/static/basic-usage-images/User-Setup@1x.png" class="center-block" style="max-width: 581px;" />
 
