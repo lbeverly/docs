@@ -17,10 +17,10 @@ ScaleFT is a cloud-native security platform that brings risk-based, dynamic auth
 ScaleFT is composed of three components:
 
 * ScaleFT Platform
-* ScaleFT Daemon
+* ScaleFT Agent
 * ScaleFT Client
 
-Using ScaleFT in your infrastructure is as simple as deploying the ScaleFT Daemon on your servers, and installing the ScaleFT Client on any workstation which is permittted to access your infrastructure.
+Using ScaleFT in your infrastructure is as simple as deploying the ScaleFT Daemon on your servers, and installing the ScaleFT client on any workstation which is permittted to access your infrastructure.
 
 ### ScaleFT Platform
 
@@ -38,12 +38,12 @@ The application that users install to interface with their workstation's local c
 
 ## Short Lived Certificates
 
-ScaleFT Projects operate Certificate Authorities to issue short-lived certificates, which are managed transparently on the User's device by the ScaleFT Client.
+ScaleFT projects operate Certificate Authorities to issue short-lived certificates, which are managed transparently on the user's device by the ScaleFT client.
 
 Each of these certificates contains the following information:
 
-1. The ScaleFT Project for which the certificate was issued
-2. The username to be used on the server of the Scaleft User to whom the certificate was issued
+1. The ScaleFT project for which the certificate was issued
+2. The username to be used on the server of the Scaleft user to whom the certificate was issued
 3. The time at which the certificate expires
 
-Since ScaleFT credentials are short-lived, and scoped to a Project, even if a credential is compromised by an attacker, the attacker has a very limited window of time to use the certificate before it expires, and it is only of use against resources in that Project.
+Since ScaleFT credentials are short-lived, and scoped to a project, even if a credential is compromised by an attacker, the attacker has a very limited window of time to use the certificate before it expires, and it is only of use against resources in that project.

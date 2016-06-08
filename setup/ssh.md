@@ -9,13 +9,13 @@ aliases:
 ---
 
 This diagram shows the logical flow of authentication which will occur in usual
-use of ScaleFT. From the perspective of the User, this can be as simple as typing
+use of ScaleFT. From the perspective of the user, this can be as simple as typing
 **`ssh <hostname>`**.
 
 <img src="/docs/static/basic-usage-images/Daily-Use.png" class="center-block" style="max-width: 681px;" />
 
 Once the [initial configuration]({{% relref "initial-configuration.md" %}}) is
-complete, Users in your Team can SSH to all servers they've been granted access to.
+complete, users in your team can SSH to all servers they've been granted access to.
 
 ### Configuring ScaleFT as a ProxyCommand for ssh
 

@@ -11,7 +11,7 @@ menu:
 Using ScaleFT with Windows requires installing the ScaleFT Server Tools on the server, and Client Tools on the client.
 See below for directions.
 
-Once the ScaleFT Server Tools are installed on the server and the server enrolled, the ScaleFT Agent (`sftd`) does two
+Once the ScaleFT Server Tools are installed on the server and the server is enrolled, the ScaleFT Agent (`sftd`) does two
 things:
 
 1. Creates local accounts for all ScaleFT users who should have access to the server, very similar to on Linux. On
@@ -31,14 +31,14 @@ In order to establish an RDP connection, the ScaleFT client:
 3. Connects to the ScaleFT broker (over the SSH tunnels, if applicable) and authenticates using the short-lived
    certificate provided by the platform. The client also authenticates the server's host certificate against one
    provided by the platform to defend against man-in-the-middle attacks.
-4. The Client requests access to the user account on the server. At this point the Broker requests that the Agent
+4. The client requests access to the user account on the server. At this point the Broker requests that the Agent
    enable the user account.
 5. Negotiates a proxied RDP connection via the Broker. The client is then able to start a TCP server on a random port
    on the client, which is proxied through the broker to the RDP service on the server.
 6. The client writes an RDP connection file containing the connection info, including the random local port on which
    the client is now listening. It then opens the Windows Terminal Services client with this configuration.
 
-The RDP Client connects to the local TCP port and is forwarded to the RDP service on the server. The RDP server is able
+The RDP client connects to the local TCP port and is forwarded to the RDP service on the server. The RDP server is able
 to automatically authenticate as the user without any further prompting.
 
 When the user logs out, `sftd` will automatically disable their account.
@@ -56,7 +56,7 @@ C:\windows\system32\config\systemprofile\AppData\Local\ScaleFT\enrollment.token
 ```
 
 Alternatively if you are using AWS you can [associate your AWS account with a ScaleFT
-Project](/docs/enrolling-a-server/#associating-an-aws-account-with-a-scaleft-project).
+project](/docs/enrolling-a-server/#associating-an-aws-account-with-a-scaleft-project).
 
 ScaleFT Server Tools installers are available [here](https://dist.scaleft.com/server-tools/windows/).
 
@@ -82,10 +82,10 @@ msiexec.exe /qb /I $installer_path
 
 ### Client Configuration
 
-Connecting to a Windows server requires a Windows client running ScaleFT Client v0.18.0 or above. Client Tools
+Connecting to a Windows server requires a Windows client running ScaleFT client v0.18.0 or above. Client Tools
 installers are available [here](https://dist.scaleft.com/client-tools/windows/).
 
-Once the client is installed it must be enrolled by running `sft enroll`.
+Once the client is installed it must be enrolled into a team by running `sft enroll`.
 
 ### Connecting to a Server
 

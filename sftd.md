@@ -1,5 +1,5 @@
 ---
-title: Server Daemon - sftd
+title: Server Agent - sftd
 menu:
   main:
     parent: 'reference'
@@ -12,12 +12,12 @@ menu:
 
 ## Description
 
-**sftd** is a daemon that runs on your servers and integrates with the ScaleFT Platform.
+The ScaleFT Agent (**sftd**) is a daemon that runs on your servers and integrates with the ScaleFT Platform.
 
-For ScaleFT Access it installs trusted CA certificates to `sshd`, tracks logins to the server,
-and manages local user accounts. If a User Group that has the `server_admin` flag enabled is
-added to the Project for an **`sftd`**-managed server, **`sftd`** will modify the sudoers file to
-include those Users.
+**sftd** installs trusted CA certificates to `sshd`, tracks logins to the server,
+and manages local user accounts. If a user group that has the `server_admin` flag enabled is
+added to the project for an **`sftd`**-managed server, **`sftd`** will modify the sudoers file to
+include those users.
 
 ***
 ## Installation
@@ -34,7 +34,7 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 
 ### Linux and Unix-like operating systems
 
-`sftd` on Linux runs under the `root` user.  Paths follow the Linux Standard Base specifications when applicable. 
+`sftd` on Linux runs under the `root` user.  Paths follow the Linux Standard Base specifications when applicable.
 
 #### State Directory
 
@@ -89,17 +89,17 @@ If this file is not available, **`sftd`** proceeds with the default values.
 #
 # AccessAddress is unset by default
 AutoEnroll:            true
-# Bastion is unset by default 
+# Bastion is unset by default
 # CanonicalName is unset by default
 # InitialURL is unset by default
 ```
 ***
 ### Common Configuration Options
-#### **`AccessAddress`** 
-_default: unset_ 
+#### **`AccessAddress`**
+_default: unset_
 
 For hosts with multiple interfaces, or behind DNATs; specifies the
-address clients will use when connecting to this host. 
+address clients will use when connecting to this host.
 
 #### **`AutoEnroll`**
  _default: `true`_
@@ -111,7 +111,7 @@ with ScaleFT on initial startup.
 _default: unset_
 
 Specifies the bastion-host clients will automatically use when connecting to
-this host.  
+this host.
 *(see: [SSHing to a server]({{% relref "ssh.md" %}}) for more details)*
 
 #### **`CanonicalName`**
@@ -125,7 +125,7 @@ _default: unset_
 
 When AutoEnroll is set to true, this option specifies the InitialURL that the
 server can use to auto-enroll.  When an enrollment.token is provided, this
-option is ignored. 
+option is ignored.
 
 ***
 ### Additional Configuration Options

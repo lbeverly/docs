@@ -34,16 +34,16 @@ Install the ScaleFT server daemon (`sftd`) on one or more servers, and [enroll t
 
 The ScaleFT Daemon (`sftd`) will automatically configure your servers to trust certificates issued by the ScaleFT Platform as a method to authenticate SSH users.
 
-You can also configure `sftd` to create user accounts for the members of your Team, and even manage `sudo` access with ScaleFT roles and permissions.
+You can also configure `sftd` to create user accounts for the members of your team, and even manage `sudo` access with ScaleFT roles and permissions.
 
 ## Initial User Setup
 
-Have Team members install the ScaleFT Client and [register it with ScaleFT]({{% relref "enrolling-a-client.md" %}}).
+Have team members install the ScaleFT client and [register it with ScaleFT]({{% relref "enrolling-a-client.md" %}}).
 
 <img src="/docs/static/basic-usage-images/User-Setup@1x.png" class="center-block" style="max-width: 581px;" />
 
 The recommended [SSH integration]({{% relref "ssh.md" %}}) method uses `ssh proxycommand` so users can use `ssh` transparently.
 
-Once installed by the Users in your Team, the ScaleFT Client will connect to the ScaleFT Platform to verify Users against your Identity Provider (IdP).
+Once installed by the users in your team, the ScaleFT client will connect to the ScaleFT Platform to verify users against your Identity Provider (IdP).
 
-While a team member remains authenticated, the Client manages the dynamic credentials that enable that User to authenticate to any resources they may access.
+While a team member remains authenticated, the client manages the dynamic credentials that enable that user to authenticate to any resources they may access.

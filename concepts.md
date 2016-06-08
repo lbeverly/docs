@@ -8,37 +8,35 @@ menu:
 
 ### Team
 
-
-A Team is a group of people who work together on infrastructure and share an authentication method (such as OAuth).
+A team is a group of people who work together on infrastructure and share an authentication method (such as OAuth).
 
 [Team documentation]({{% relref "teams.md" %}})
+
+### Identity Provider (IdP)
+
+Every team has an Identity Provider which users authenticate to using the team's authentication method. The IdP is the source of truth for that user's identity and current access.
 
 
 ### Project
 
-A Project is a collection of resources (such as servers, load-balancers, web services, or VPNs) that share configurations and associated User Group permissions.
+A project is a collection of resources (such as servers, load-balancers, web services, or VPNs) that share configurations and associated user group permissions.
 
 [Project documentation]({{% relref "projects.md" %}})
 
 
 ### Group
 
-A Group is a collection of Users and Team permissions. Groups are linked to Projects to describe Users' permissions within that Project.
+A group is a collection of users and team permissions. Groups are linked to projects to describe users' permissions within that project.
 
 [Group documentation]({{% relref "groups.md" %}})
 
 
 ### User
 
-A User is a member of a Team. Users can belong to multiple Groups and have multiple Clients.
+A user is a member of a team. Users can belong to multiple groups and have multiple clients.
 
 ### Client
 
-The ScaleFT Client is installed on a device (such as a laptop or workstation) which a User uses to access infrastructure. The ScaleFT Client manages the dynamic credentials on the device so the User can transparently access ScaleFT-managed infrastructure.
+The ScaleFT client is installed on a device (such as a laptop or workstation) which a user uses to access infrastructure. The ScaleFT client manages the dynamic credentials on the device so the user can transparently access ScaleFT-managed infrastructure.
 
 [Client Enrollment documentation]({{% relref "enrolling-a-client.md" %}})
-
-
-### Identity Provider (IdP)
-
-Every Team has an Identity Provider which Users authenticate to using the Team's authentication method. The IdP is the source of truth for User's identity and current access.

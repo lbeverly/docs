@@ -8,7 +8,7 @@ aliases:
   - /docs/enrolling-a-client
 ---
 
-Users must first install the ScaleFT Client, and then register their workstations with ScaleFT.
+Users must first install the ScaleFT client, and then register their workstations with ScaleFT.
 
 <img src="/docs/static/basic-usage-images/User-Setup@1x.png" style="max-width: 581px;" class="center-block" />
 
@@ -19,7 +19,7 @@ Users must first install the ScaleFT Client, and then register their workstation
 
 ## Enrolling Your Workstation
 
-Once the ScaleFT Client is installed, the User should enroll their workstation.
+Once the ScaleFT client is installed, the user should enroll their workstation.
 
 To do so, run `sft enroll` in your terminal.
 
@@ -31,7 +31,7 @@ Waiting on browser...
 
 </div>{{% /terminal %}}
 
-This should open a web browser, allowing you to choose your Team and complete the client enrollment process.
+This should open a web browser, allowing you to choose your team and complete the client enrollment process.
 
 <img src="/docs/static/client-enrollment-approval.png" style="max-height: 621px;" />
 

@@ -19,4 +19,3 @@ When writing examples or showing terminal output, avoid putting in PII, and inst
 | Domain Name (Corporate) | `corp.example.com` | |
 | Hostname (Windows) | `WIN-C81EJK` | |
 | Hostname (Linux) | `web0.example.com` | |
-
