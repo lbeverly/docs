@@ -25,13 +25,8 @@ First, run **`sft proxycommand --config`**. This command will output a configura
 for use in your personal SSH configuration file, usually at **`~/.ssh/config`**.
 Simply append the configuration there.
 
-**Note:** With the auto-generated configuration, you will not be prompted to
-approve your client's access automatically when you run **`ssh`**. If your client
-is authorized, you will be connected automatically, otherwise you will see a
-warning indicating that your client needs to be re-authorized. You can change
-this behavior by omitting the "-q" flag. However, doing so will result in
-you being prompted to authorize sft any time you use ssh, even for hosts not
-currently managed by ScaleFT.
+After the configuration is in your **`~/.ssh/config`**, run **`sft login`** to open a ScaleFT
+session, which enables **`ssh`** to get credentials from ScaleFT, and you can **`ssh`** to your hosts.
 
 {{% terminal %}}
 <div>[alice@mylaptop]$ sft proxycommand --config
@@ -41,6 +36,10 @@ Match exec "/usr/bin/sft resolve -q %h"
     UserKnownHostsFile "/Users/alice/Library/Application Support/ScaleFT/proxycommand_known_hosts"
 
 [alice@mylaptop]$ sft proxycommand --config >> ~/.ssh/config
+[alice@mylaptop]$ sft login
+Waiting on browser...
+Browser step completed successfully.
+Session expires in 9h0m0s
 [alice@mylaptop]$ ssh web0.example.com
 Welcome to Ubuntu 15.04 (GNU/Linux 3.19.0-15-generic x86_64)
 
