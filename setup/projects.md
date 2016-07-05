@@ -20,10 +20,10 @@ To create a project, click "Projects" in the nagivation panel, then click "New P
 Choose a unique name to identify your project. It may not contain spaces or special
 characters, other than `-`, `_`, or `.`.
 
-### Create Server Users
+### Manage Server Users
 
-ScaleFT can optionally instruct `sftd` to create local user accounts on your servers
-for users who have access to the project. When operating in this mode:
+ScaleFT can optionally instruct `sftd` to create and manage local user accounts on your
+servers for users who have access to the project. When operating in this mode:
 
 1. Users will automatically be assigned a user name based on their ScaleFT user name.
 2. On Linux servers, users will be automatically assigned a UID starting from
@@ -31,7 +31,7 @@ for users who have access to the project. When operating in this mode:
    assigned by ScaleFT on a per-project basis, so a user may have a different
    UID in each project that they belong to.
 
-To enable user account management for a project, check the "Create Server
+To enable user account management for a project, check the "Manage Server
 Users" box when creating the project.
 
 ### Adding Groups
