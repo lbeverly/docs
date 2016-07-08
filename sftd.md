@@ -48,6 +48,8 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 
 **`sftd`** uses the system logger when available.
 
+Log files will be rotated after 5MB, and the latest 10 log files will be kept.
+
 #### Enrollment Token:
 
 **`/var/lib/sftd/enrollment.token`**
@@ -69,6 +71,8 @@ Add [ScaleFT to your package manager](/docs/linux-package-manager). Then run `su
 #### Log Directory:
 
 **`C:\Windows\System32\config\systemprofile\AppData\Local\ScaleFT\Logs`**
+
+Log files will be rotated after 5MB, and the latest 10 log files will be kept.
 
 #### Enrollment Token:
 
