@@ -37,7 +37,7 @@ A user is a member of a team. Users can belong to multiple groups and have multi
 
 ### Service User
 
-A Service User is a member of a Team. Like Users they can belong to multiple Groups. They are used for automating actions against the ScaleFT API. They are not granted credentials to
+A service user is a member of a team. Like users they can belong to multiple groups. They are used for automating actions against the ScaleFT API. They are not granted credentials to
 servers.
 
 [Service User documentation]({{% relref "service-users.md" %}})
