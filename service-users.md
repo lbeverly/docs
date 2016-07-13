@@ -6,8 +6,8 @@ menu:
     weight: 3
 ---
 
-ScaleFT uses service users to allow you to build automation against the
-ScaleFT API. This could include operations such as:
+Service users enable you to grant permissions to your automation to
+access specific operations in the ScaleFT API, such as:
 
 1. Adding users to groups programmatically.
 2. Retrieving audit event logs to store in your ELK setup.
@@ -27,7 +27,7 @@ Important: Service users are not able to create credentials to access servers.
 ## Authentication
 
 In order to authenticate as your service user to the ScaleFT API, you will need to create an
-API key. The API key is a pair of strings known has the Id and Secret.
+API key. The API key is a pair of strings known as the id and secret.
 You will need both to authenticate, which generates an authentication
 token that is sent with each request you make.
 
