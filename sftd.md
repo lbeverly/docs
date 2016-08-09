@@ -99,11 +99,23 @@ AutoEnroll:            true
 ```
 ***
 ### Common Configuration Options
+
 #### **`AccessAddress`**
 _default: unset_
 
 For hosts with multiple interfaces, or behind DNATs; specifies the
 address clients will use when connecting to this host.
+
+#### **`AltNames`**
+_default: unset_
+
+A list of alternative hostnames for this server.  These names can be used as targetnames in `sft ssh`.
+
+Example:
+```yaml
+AltNames: ["web01", "web01.example.com"]
+```
+
 
 #### **`AutoEnroll`**
  _default: `true`_
