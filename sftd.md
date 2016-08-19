@@ -14,10 +14,9 @@ menu:
 
 The ScaleFT Agent (**sftd**) is a daemon that runs on your servers and integrates with the ScaleFT Platform.
 
-**sftd** installs trusted CA certificates to `sshd`, tracks logins to the server,
-and manages local user accounts. If a user group that has the `server_admin` flag enabled is
-added to the project for an **`sftd`**-managed server, **`sftd`** will modify the sudoers file to
-include those users.
+**sftd** installs trusted CA certificates to `sshd`, tracks logins to the server, and manages
+local user accounts. If a user group with the `server_admin` role enabled is added to the project
+for an **`sftd`**-managed server, **`sftd`** will modify the sudoers file to include those users.
 
 ***
 ## Installation
