@@ -35,6 +35,13 @@ A group is a collection of users and team permissions. Groups are linked to proj
 
 A user is a member of a team. Users can belong to multiple groups and have multiple clients.
 
+### Service User
+
+A service user is a member of a team. Like users they can belong to multiple groups. They are used for automating actions against the ScaleFT API. They are not granted credentials to
+servers.
+
+[Service User documentation]({{% relref "service-users.md" %}})
+
 ### Client
 
 The ScaleFT client is installed on a device (such as a laptop or workstation) which a user uses to access infrastructure. The ScaleFT client manages the dynamic credentials on the device so the user can transparently access ScaleFT-managed infrastructure.
