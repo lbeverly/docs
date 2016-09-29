@@ -52,3 +52,4 @@ After installing, be sure to [enroll your client]({{% relref "enrolling-a-client
 ## Usage
 
 Once your client is enrolled, you can `ssh` to your servers with `sft ssh [hostname]`. For more details, see [SSHing to a Server]({{% relref "ssh.md" %}}).
+Logs can be found in `~/.cache/ScaleFT/logs/sft/`.
